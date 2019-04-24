@@ -1,0 +1,15 @@
+ Last login: Mon Jan 14 12:54:11 2019 from 192.168.15.5
+This system is for the use of authorized users only.
+
+ sdpuser@RY1SDPTB>cd /var/opt/fds/logs
+sdpuser@RY1SDPTB>
+sdpuser@RY1SDPTB>
+ tail -0f TraceEventLogFile.txt.0 | g
+ rep 939845098345 | tr "|" " 
+Unmatched ".
+
+
+sdpuser@RY1SDPTB>"
+Unmatched ".
+sdpuser@RY1SDPTB>
+sdpuser@RY1SDPTB>

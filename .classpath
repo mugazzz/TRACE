@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/Auto/JARS/swt-win64-3.6.2.jar"/>
+	<classpathentry kind="lib" path="D:/Auto/JARS/swt-3.5.0.jar"/>
+	<classpathentry kind="lib" path="D:/Auto/JARS/org.eclipse.swt.win32.win32.x86-3.5.1.jar"/>
+	<classpathentry kind="lib" path="D:/Auto/JARS/org.eclipse.jface-3.3.1.jar"/>
+	<classpathentry kind="lib" path="D:/Auto/JARS/org.eclipse.jface.text_3.5.0.jar"/>
+	<classpathentry kind="lib" path="D:/Auto/JARS/org.eclipse.equinox.common-3.10.300.jar"/>
+	<classpathentry kind="lib" path="D:/Auto/JARS/org.eclipse.core.runtime_3.6.0.jar"/>
+	<classpathentry kind="lib" path="D:/Auto/JARS/org.eclipse.core.databinding-1.6.0.jar"/>
+	<classpathentry kind="lib" path="D:/Auto/JARS/org.eclipse.core.databinding.property-1.6.400.jar"/>
+	<classpathentry kind="lib" path="D:/Auto/JARS/org.eclipse.core.databinding.observable-1.6.400.jar"/>
+	<classpathentry kind="lib" path="D:/Auto/JARS/org.eclipse.core.commands-3.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/Auto/JARS/jsch-0.1.55.jar"/>
+	<classpathentry kind="lib" path="D:/Auto/JARS/eclipse-ui-forms-3.5.0.jar"/>
+	<classpathentry kind="lib" path="D:/Auto/JARS/databinding-1.6.0.jar"/>
+	<classpathentry kind="lib" path="D:/Auto/JARS/com.jcraft.jsch_0.1.31.jar"/>
+	<classpathentry kind="lib" path="D:/Auto/JARS/com.ibm.icu_58.2.0.v20170418-1837-4.8.0.jar"/>
+	<classpathentry kind="lib" path="D:/Auto/JARS/apache-logging-log4j.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

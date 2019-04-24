@@ -1,0 +1,8 @@
+ Last login: Tue Apr  9 10:54:45 2019 from 192.168.15.46
+This system is for the use of authorized users only.
+
+ sdpuser@RY1SDPTB>cd /var/opt/fds/logs
+sdpuser@RY1SDPTB>
+sdpuser@RY1SDPTB>
+ tail -0f TraceEventLogFile.txt.0 | grep 950032069 | tr "|" "\n" 
+

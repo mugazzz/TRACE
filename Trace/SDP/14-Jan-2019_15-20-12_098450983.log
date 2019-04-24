@@ -1,0 +1,10 @@
+ sdpuser@RY1SDPTB>
+ cd /var/opt/fds/logs
+
+ sdpuser@RY1SDPTB>
+sdpuser@RY1SDPTB>tail -0f TraceEventLogFile.txt.0 | grep 098450983 | tr "|" "
+Unmatched ".
+sdpuser@RY1SDPTB>"
+Unmatched ".
+sdpuser@RY1SDPTB>
+sdpuser@RY1SDPTB>

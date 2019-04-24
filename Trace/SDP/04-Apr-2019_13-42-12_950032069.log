@@ -1,0 +1,1363 @@
+ Last login: Thu Apr  4 11:11:47 2019 from 192.168.15.33
+This system is for the use of authorized users only.
+
+ sdpuser@RY1SDPTB>cd /var/opt/fds/logs
+sdpuser@RY1SDPTB>
+sdpuser@RY1SDPTB>
+ tail -0f TraceEventLogFile.txt.0 | grep 950032069 | tr "|" "\n" 
+
+ 1554365683.431000[20190404 11:14:16.431000] Module: PSC-CIPDiameter/8.1/A/1 Event: CIPDiameter: Tracing diameter request ID: 7100020 Type: 2269699863189094401 Count: 279484 Aff.Obj: 966950032069 Info: Received request with size 560 byte
+--------------------Begin Raw-----------------------
+01 00 02 30 80 FF FF FE 01 00 00 10 6B 4D CD C2 6B 4D CD C2 00 00 01 07 40 00
+00 26 64 69 61 6D 65 74 65 72 64 2D 31 35 35 34 33 36 35 36 38 33 2D 34 32 30
+35 39 36 2D 31 39 00 00 00 00 01 04 40 00 00 20 00 00 01 02 40 00 00 0C 01 00
+00 10 00 00 01 0A 40 00 00 0C 00 00 00 C1 00 00 01 08 40 00 00 11 73 69 6D 75
+6C 61 74 6F 72 00 00 00 00 00 01 28 40 00 00 16 73 69 6D 75 6C 61 74 6F 72 2E
+64 65 6D 6F 00 00 00 00 01 1B 40 00 00 19 7A 61 69 6E 2E 72 79 31 73 64 70 74
+62 2E 63 6F 6D 00 00 00 00 00 01 9F 40 00 00 0C 00 00 00 00 00 00 01 A0 40 00
+00 0C 00 00 00 01 00 00 01 BB 40 00 00 28 00 00 01 BC 40 00 00 14 39 36 36 39
+35 30 30 33 32 30 36 39 00 00 01 C2 40 00 00 0C 00 00 00 00 00 00 01 C8 40 00
+00 AC 00 00 01 B5 40 
+ 00 00 08 00 00 01 B7 40 00 00 0C 00 00 00 00 00 00 04 2C
+C0 00 00 0D 00 00 00 C1 31 00 00 00 00 00 04 61 80 00 00 10 00 00 00 C1 00 00
+00 00 00 00 04 62 80 00 00 10 00 00 00 C1 00 00 00 00 00 00 04 33 80 00 00 60
+00 00 00 C1 00 00 04 34 C0 00 00 10 00 00 00 C1 00 00 00 00 00 00 04 35 C0 00
+00 18 00 00 00 C1 39 36 36 35 39 31 33 36 37 31 34 34 00 00 04 36 C0 00 00 10
+00 00 00 C1 00 00 00 00 00 00 04 4F C0 00 00 1C 00 00 00 C1 00 00 04 51 80 00
+00 10 00 00 00 C1 00 00 07 D1 00 00 01 CD 40 00 00 25 43 6F 72 65 5F 43 6F 6E
+74 65 78 74 5F 52 31 41 40 65 72 69 63 73 73 6F 6E 2E 63 6F 6D 00 00 00 00 00
+04 27 80 00 00 18 00 00 00 C1 00 00 00 37 40 00 00 0C E0 50 3B 73 00 00 04 29
+C0 00 00 24 00 00 00 C1 43 41 50 76 32 5F 56 2E 31 2E 30 40 65 72 69 63 73 73
+6F 6E 2E 63 6F 6D 00 00 04 32 C0 00 00 0E 00 00 00 C1 34 39 00 00 00 00 04 3B
+C0 00 00 0F 00 00 00 C1 52 31 41 00 00 00 00 17 C0 00 00 0E 00 00 28 AF 00 00
+00 00 00 00 00 37 40 00 00 0C E0 50 3B 73 
+--------------------End Raw------------------------
+
+ --------------------Begin Command -----------------------
+Head: [r---:16777214:16777232]
+    263 [-m-:263:0] {6469616D65746572642D313535343336353638332D3432303539362D3139} I     Session-Id [-m-:263:0] {6469616D65746572642D313535343336353638332D3432303539362D3139}
+    260 [-m-:260:0]                                                   I     Vendor-Specific-Application-Id [-m-:260:0]
+        258 [-m-:258:0] {01000010}                                    I         Auth-Application-Id [-m-:258:0] {16777232}
+        266 [-m-:266:0] {000000C1}                                    I         Vendor-Id [-m-:266:0] {193}
+    264 [-m-:264:0] {73696D756C61746F72}                              I     Origin-Host [-m-:264:0] {73696D756C61746F72}
+    296 [-m-:296:0] {73696D756C61746F722E64656D6F}                    I     Origin-Realm [-m-:296:0] {73696D756C61746F722E64656D6F}
+    283 [-m-:283:0] {7A61696E2E72793173647074622E636F6D}              I     Destination-Realm [-m-:283:0] {7A61696E2E72793173647074622E636F6D}
+    4
+ 15 [-m-:415:0] {00000000}                                        I     CC-Request-Number [-m-:415:0] {0}
+    416 [-m-:416:0] {00000001}                                        I     CC-Request-Type [-m-:416:0] {1} {INITIAL_REQUEST}
+    443 [-m-:443:0]                                                   I     Subscription-Id [-m-:443:0]
+        444 [-m-:444:0] {393636393530303332303639}                    I         Subscription-Id-Data [-m-:444:0] {966950032069}
+        450 [-m-:450:0] {00000000}                                    I         Subscription-Id-Type [-m-:450:0] {0} {END_USER_E164}
+    456 [-m-:456:0]                                                   I     MSCC [-m-:456:0]
+        437 [-m-:437:0]                                               I         Requested-Service-Unit [-m-:437:0]
+        439 [-m-:439:0] {00000000}                                    I         Service-Identifier [-m-:439:0] {0}
+        1068 [vm-:1068:193] {31}                                      I         Service-Session-I
+ d [vm-:1068:193] {31}
+        1121 [v--:1121:193] {00000000}                                I         Roaming-Position [v--:1121:193] {0} {Inside HPLMN}
+        1122 [v--:1122:193] {00000000}                                I         Service-Scenario [v--:1122:193] {0} {Mobile Originating}
+        1075 [v--:1075:193]                                           I         Other-Party-Id [v--:1075:193]
+            1076 [vm-:1076:193] {00000000}                            I             Other-Party-Id-Nature [vm-:1076:193] {0} {Unknown}
+            1077 [vm-:1077:193] {393636353931333637313434}            I             Other-Party-Id-Data [vm-:1077:193] {966591367144}
+            1078 [vm-:1078:193] {00000000}                            I             Other-Party-Id-Type [vm-:1078:193] {0} {END_USER_E164}
+            1103 [vm-:1103:193]                                       I             Other-Party-Id-MNP [vm-:1103:193]
+                1105 [v--:1105:193] {000007D1}                        I                 Ot
+ her-Party-Id-MNP-Result [v--:1105:193] {2001}
+    461 [-m-:461:0] {436F72655F436F6E746578745F523141406572696373736F6E2E636F6D} I     Service-Context [-m-:461:0] {Core_Context_R1A@ericsson.com}
+    1063 [v--:1063:193]                                               I     Access-Information [v--:1063:193]
+        55 [-m-:55:0] {E0503B73}                                      I         Event-Timestamp [-m-:55:0] {E0503B73}
+    1065 [vm-:1065:193] {43415076325F562E312E30406572696373736F6E2E636F6D} I     Charging-Context-Id [vm-:1065:193] {CAPv2_V.1.0@ericsson.com}
+    1074 [vm-:1074:193] {3439}                                        I     Subscription-Id-Location [vm-:1074:193] {49}
+    1083 [vm-:1083:193] {523141}                                      I     CIP-IP-Version [vm-:1083:193] {R1A}
+    23 [vm-:23:10415] {0000}                                          I     TimeZone [vm-:23:10415]
+    55 [-m-:55:0] {E0503B73}                                          I     Event-Timestamp [-m-:55:0] {E0503B73}
+----
+ ----------------End Command -----------------------
+
+1554365683.432000[20190404 11:14:16.432000] Module: PSC-TrafficHandler/8.1/A/1 Event: Tree execution trace ID: 9900006 Type: 2269699863190011905 Count: 153383 Aff.Obj: 966950032069 Info: Provider: NumberNormalization RatingPlan: 0
+Print out of data set:
+-- Full DataSet output --
+Service: NumberNormalization
+Values:
+  Wanted Nature of number = SDP format
+  Nature of number = International
+  Number to normalize = 966950032069
+
+-- Output done --
+
+
+ ========================================== [Main_NumberNormalization_With_DCIP_PA2]
+  ========================================== [Normalization for CIP/IP]
+   1? <TRUE> Integer : Wanted Nature of number(SDP format) = SDP format
+   ========================================== [00966]
+    1? <FALSE> Number to normalize (966950032069) is NOT in list
+   ========================================== [966]
+    1? <FALSE> Number to normalize (966950032069) is NOT in list
+   =================================
+ ========= [0]
+    1? <FALSE> Number to normalize (966950032069) is NOT in list
+   ========================================== [00966]
+    1? <FALSE> Number to normalize (966950032069) is NOT in list
+   ========================================== [966]
+    1? <FALSE> Number to normalize (966950032069) is NOT in list
+   ========================================== [966]
+    1? <TRUE> Number to normalize (966950032069) is in list
+    1! Number to normalize: 4 - 966950032069
+    1! Normalized number  : 1 - 950032069
+
+
+
+Parameters that were changed:
+Normalized number = 950032069
+
+
+1554365683.432000[20190404 11:14:16.432000] Module: PSC-TrafficHandler/8.1/A/1 Event: OperationManager: Trace of input message, RequestData and ChargingState ID: 5000100 Type: 2269699863188406273 Count: 63524 Aff.Obj: 950032069 Info: 
+<interrogationRequest>
+   <header>
+      <subscriberId type="Subscriber (SDP format)">950032069</subscriberId>
+      <subscriberIdIMSI/>
+      <chargingContextId>CAPv2_V.1.0@ericsson.com</
+ chargingContextId>
+      <requestInfo>
+         <requestId>0x[73,69,6d,75,6c,61,74,6f,72,6b,4d,cd,c2]</requestId>
+         <requestResent>false</requestResent>
+      </requestInfo>
+      <globalChargingState/>
+      <isEndOfGlobalSessionOperationNeeded>false</isEndOfGlobalSessionOperationNeeded>
+      <chargingControlRequestType>REQ_INITIAL</chargingControlRequestType>
+      <chargingSessionData>
+         <sessionId>diameterd-1554365683-420596-19</sessionId>
+         <originRealm>simulator.demo</originRealm>
+         <originHost>simulator</originHost>
+      </chargingSessionData>
+      <currentLocalTime/>
+      <isEligibleForProviderBypass>false</isEligibleForProviderBypass>
+   </header>
+</interrogationRequest>
+
+1554365683.434000[20190404 11:14:16.434000] Module: PSC-TrafficHandler/8.1/A/1 Event: OperationManager: Trace of input message, RequestData and ChargingState ID: 5000100 Type: 2269699863188406273 Count: 63525 Aff.Obj: 950032069 Info: 
+<serviceRequest index="0">
+   <header>
+      <
+ subscriberId type="Subscriber (SDP format)">950032069</subscriberId>
+      <subscriberIdIMSI/>
+      <chargingContextId>CAPv2_V.1.0@ericsson.com</chargingContextId>
+      <requestInfo>
+         <requestId>0x[73,69,6d,75,6c,61,74,6f,72,6b,4d,cd,c2]</requestId>
+         <requestResent>false</requestResent>
+      </requestInfo>
+      <globalChargingState/>
+      <isEndOfGlobalSessionOperationNeeded>false</isEndOfGlobalSessionOperationNeeded>
+      <chargingControlRequestType>REQ_INITIAL</chargingControlRequestType>
+      <chargingSessionData>
+         <sessionId>diameterd-1554365683-420596-19</sessionId>
+         <originRealm>simulator.demo</originRealm>
+         <originHost>simulator</originHost>
+      </chargingSessionData>
+      <currentLocalTime/>
+      <isEligibleForProviderBypass>false</isEligibleForProviderBypass>
+   </header>
+   <data>
+      <request>
+         <serviceRequest>
+            <type>OP_FIRST</type>
+            <triggerTime>1554365683</triggerTime>
+            <timeZone>
+ 0</timeZone>
+            <daylightSavingTime/>
+            <isStartOfSessionTime>false</isStartOfSessionTime>
+            <isOfflineRequest>false</isOfflineRequest>
+            <isReratingRequest>false</isReratingRequest>
+            <serviceIdentifier>0</serviceIdentifier>
+            <requestedUnits>
+               <time/>
+               <money/>
+               <volume/>
+               <serviceSpecific/>
+            </requestedUnits>
+            <requestedValidityTime>
+               <value>0</value>
+            </requestedValidityTime>
+            <usedUnits/>
+            <usedUnitsAfter/>
+            <serviceSessionId>0x[31]</serviceSessionId>
+            <recalculateTriggerTime>false</recalculateTriggerTime>
+         </serviceRequest>
+         <contextRequest>
+            <ratingInput>
+               <DDRAttributeMap tag="0">
+                  <DDRString tag="16778217" name="Subscription-Id-Location">49</DDRString>
+                  <DDRAddressString tag="16778219" name="Other-Par
+ ty-Id-Address" type="Unknown">966591367144</DDRAddressString>
+                  <DDRUnsignedInt32 tag="16778222" name="Other-Party-Id-MNP-Result">2001</DDRUnsignedInt32>
+                  <DDRUnsignedInt32 tag="16778324" name="Other-Party-Id-Nature">0</DDRUnsignedInt32>
+                  <DDRString tag="16778292" name="Other-Party-Id-Data">966591367144</DDRString>
+               </DDRAttributeMap>
+            </ratingInput>
+            <changeableRatingInput>
+               <DDRAttributeMap tag="0">
+               </DDRAttributeMap>
+            </changeableRatingInput>
+         </contextRequest>
+         <dedicatedAccountRequest>
+            <maxNumberOfDA>255</maxNumberOfDA>
+            <maxDedicatedAccountIdValue>2147483647</maxDedicatedAccountIdValue>
+            <preSelectedDedicatedAccount>0</preSelectedDedicatedAccount>
+            <isOfferDrivenRatingSupported>true</isOfferDrivenRatingSupported>
+         </dedicatedAccountRequest>
+         <fafRequest>
+            <otherPartyNr type="
+ Unknown">966591367144</otherPartyNr>
+         </fafRequest>
+         <communityRequest>
+            <otherPartyNr type="Unknown">966591367144</otherPartyNr>
+            <nonChargedCommunityIds/>
+         </communityRequest>
+         <trafficTypeRequest>
+            <serviceScenario>Mobile Originating</serviceScenario>
+            <serviceExtension>Undefined</serviceExtension>
+            <roamingPosition>Inside HPLMN</roamingPosition>
+            <access>CAPv2</access>
+         </trafficTypeRequest>
+         <announcementRequest>PLAY_ANNOUNCEMENT</announcementRequest>
+         <screeningRequest>
+            <otherPartyNr type="Unknown">966591367144</otherPartyNr>
+         </screeningRequest>
+         <sessionSetupResultRequest/>
+         <dataRecordRequest>
+            <generateDataRecordType>DATA_RECORD</generateDataRecordType>
+         </dataRecordRequest>
+         <optimizedDialogueRequest>
+            <optimisedDialoguePossible>false</optimisedDialoguePossible>
+         </optimizedDi
+ alogueRequest>
+         <accumulatorRequest>
+            <maxAccumulatorIDValue>2147483647</maxAccumulatorIDValue>
+            <maxNumberOfAccumulators>255</maxNumberOfAccumulators>
+            <maxNumberOfUpdatedAccumulators>255</maxNumberOfUpdatedAccumulators>
+         </accumulatorRequest>
+         <customizationRequest>
+            <customizationData/>
+         </customizationRequest>
+         <chargingFromTriggerRequest>
+            <isApplicable>true</isApplicable>
+         </chargingFromTriggerRequest>
+         <userNotificationAtTerminationRequest>
+            <isToSendUserNotification>false</isToSendUserNotification>
+         </userNotificationAtTerminationRequest>
+         <subscriptionTypes>CORE</subscriptionTypes>
+         <handlingOfLateRoamingCDRRequest/>
+         <handlingOfUsedOfferIdRequest/>
+         <supportRedirectServerRequest/>
+         <handlingOfNegativeTariffOnDaRequest/>
+      </request>
+      <state disc="CSIT_UNPACKED">
+         <contextState>
+            <pa
+ rameterMemory/>
+         </contextState>
+         <fafState>
+            <fafIndicator>0</fafIndicator>
+         </fafState>
+         <accumulatorState/>
+         <communityState/>
+         <sessionAccumulatorState>
+            <subAccumulatedDuration>[]</subAccumulatedDuration>
+            <accumulatedUnits>
+               <time/>
+               <money/>
+               <volume/>
+               <serviceSpecific/>
+            </accumulatedUnits>
+         </sessionAccumulatorState>
+         <dedicatedAccountState/>
+         <accountState/>
+         <aggregatedBalanceState/>
+         <walletState/>
+         <serviceOfferingsState/>
+         <ratingState/>
+         <treeDefinedFieldsState/>
+         <priceFactorState>
+            <priceFactor>0x[]</priceFactor>
+         </priceFactorState>
+         <serviceConfigState/>
+         <usageCounterState>
+            <correlationId>-1</correlationId>
+            <providerCorrelationId>-1</providerCorrelationId>
+            <providerId/>
+  
+        </usageCounterState>
+         <accumulatedChargeState/>
+         <chargingFromTriggerState/>
+         <dynamicDiscountState/>
+         <productState/>
+      </state>
+      <returnState>CSIT_PACKED</returnState>
+   </data>
+</serviceRequest>
+
+1554365683.442000[20190404 11:14:16.442000] Module: PSC-TrafficHandler/8.1/A/1 Event: Tree execution trace ID: 9900006 Type: 2269699863190011905 Count: 153384 Aff.Obj: 950032069 Info: Provider: ServiceDetailDetermination RatingPlan: main
+Current time:       2019-04-04 11:14:43
+
+Print out of data set:
+  USSD Messages - Start of Session: true
+  Time Since Last Interrogation: 0
+  Dedicated Accounts: 
+   ID   Prod. ID  Balance         Start date     Expiry date     Empty level  Composite  DA type  DA owner  PAM relative dates  
+   ---  --------  --------------  -------------  --------------  -----------  ---------  -------  --------  ------------------  
+   500         0  1000000.000000  No start date  No expiry date           No         No    Money  
+ Consumer                  No  
+   501         0  1000000.000000  No start date  No expiry date           No         No    Money  Provider                  No
+
+ Context specific information: 
+  Charging context: CAPv2_V.1.0@ericsson.com
+  Service identifier: 0
+  Call setup result: Result NOT supplied
+  Subscription-Id-Address: 950032069
+  Service extension: Not set
+  Service scenario: Mobile Originating
+  Other-Party-Id-Data: 966591367144
+  Roaming position: Inside HPLMN
+  Other-Party-Id-MNP-Result: 2001 - Success
+  Other-Party-Id-Nature: 0 = Unknown
+  Other-Party-Id-Address: 966591367144
+  Subscription-Id-Location: 49
+
+
+
+
+ ========================================== [CBIO_MAIN_V2]
+  ========================================== [PCRF_Data_Offers]
+   1? <FALSE> CompoundBoolean : Using AND on the result from all children
+    1? <TRUE> NumberSeries : Service class(8010) is found in series
+    2? <FALSE> String : Charging context ID("CAPv2_V.1.0@ericsson.com") equals (case sensitive) "Ericsson
+ _OCS_V1_0.0.0.10.32251@3gpp.org"
+  ========================================== [Normal Data]
+   1? <FALSE> CompoundBoolean : Using AND on the result from all children
+    1? <TRUE> NumberSeries : Service class(8010) is found in series
+    2? <FALSE> String : Charging context ID("CAPv2_V.1.0@ericsson.com") equals (case sensitive) "Ericsson_OCS_V1_0.0.0.10.32251@3gpp.org"
+  ========================================== [B2C Postpaid G]
+   1? <TRUE> CompoundBoolean : Using OR on the result from all children
+    1? <TRUE> Short : Service class(8010) = 8010
+   1! SetField : User Messages Start Of Session = true
+   ========================================== [CL Check]
+    1? <TRUE> UsageCounter 501.0 (0.000000) is above or equal to UsageThreshold 501 * Value % (0.000000)
+    1? Partial charging interval allowed: True
+    1? Session termination: False
+    1! Stopped tree execution
+
+
+
+Parameters that were changed:
+
+Output Tree defined variables
+
+
+1554365683.454000[20190404 11:14:16.454000] Module: P
+ SC-TrafficHandler/8.1/A/1 Event: Tree execution trace ID: 9900006 Type: 2269699863190011905 Count: 153385 Aff.Obj: 950032069 Info: Provider: PreAnalysis RatingPlan: main
+SDP local time: 2019-04-04 11:14:43 +03:00
+Start time: 2019-04-04 08:14:43 +00:00
+
+Print out of data set:
+  Account group id: 0
+  Service offerings: 0
+  Account FaF Numbers: No account FAF numbers defined
+  Subscriber FaF Numbers: No subscriber FAF numbers defined
+  Service class: 8010
+  Screening Result: 0
+
+ Context specific information: 
+  Charging context: CAPv2_V.1.0@ericsson.com
+  Service identifier: 0
+  Call setup result: Result NOT supplied
+  Subscription-Id-Address: 950032069
+  Service extension: Not set
+  Service scenario: Mobile Originating
+  Other-Party-Id-Data: 966591367144
+  Roaming position: Inside HPLMN
+  Other-Party-Id-MNP-Result: 2001 - Success
+  Other-Party-Id-Nature: 0 = Unknown
+  Other-Party-Id-Address: 966591367144
+  Subscription-Id-Location: 49
+
+
+
+
+ ========================================== 
+ [TDF_TAPCODE_POPULATION_V1]
+  ========================================== [ZAIN KSA CBIO]
+   1? <TRUE> ShortNumberList : Service class(8010) is found in list
+   1! GoTo : jump to rating plan 'CBIO_PA@PreAnalysis' from
+   1!        originating rating plan 'main'
+    
+     ========================================== [CBIO_PA_V29]
+      ========================================== [EMM TADIG Code TDF]
+       1? <TRUE> ShortNumberList : Service class(8010) is found in list
+       ========================================== [Data MCC MNC]
+        1? <FALSE> Using AND on the result from all children.
+         1? <FALSE> Revision : Charging context ID("CAPv2_V.1.0@ericsson.com") is equal or higher revision than "Ericsson_OCS_V1_0.0.0.10.32251@3gpp.org"
+       ========================================== [Voice/SMS MCC MNC]
+        1? <FALSE> Using OR on the result from all children.
+         1? <FALSE> Using AND on the result from all children.
+          1? <FALSE> CompareField : Charging context ID(CAPv2_V.
+ 1.0@ericsson.com) Exact_match CAPv3_V.1.0@ericsson.com
+         2? <FALSE> Using AND on the result from all children.
+          1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match SCAP_V.2.0@ericsson.com
+         3? <FALSE> Using AND on the result from all children.
+          1? <TRUE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv2_V.1.0@ericsson.com
+          2? <TRUE> ULong : Service identifier(0) = 0
+          3? <FALSE> UInteger : Roaming-Position(Inside HPLMN) = Outside HPLMN
+       ========================================== [Voice/SMS TAPCODE]
+        1? <FALSE> Using AND on the result from all children.
+         1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match SCAP_V.2.0@ericsson.com
+      ========================================== [TDF ZN_PKEY]
+       ========================================== [Outgoing Voice]
+        1? <FALSE> Using OR on the result from all children.
+         1? <FALSE> U
+ sing AND on the result from all children.
+          1? <TRUE> UInteger : Service-Scenario(Mobile Originating) = Mobile Originating
+          2? <TRUE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv2_V.1.0@ericsson.com
+          3? <TRUE> ULong : Service identifier(0) = 0
+          4? <FALSE> UInteger : Roaming-Position(Inside HPLMN) = Outside HPLMN
+         2? <FALSE> Using AND on the result from all children.
+          1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match SCAP_V.2.0@ericsson.com
+       ========================================== [Outgoing SMS]
+        1? <FALSE> Using OR on the result from all children.
+         1? <FALSE> Using AND on the result from all children.
+          1? <TRUE> UInteger : Service-Scenario(Mobile Originating) = Mobile Originating
+          2? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv3_V.1.0@ericsson.com
+         2? <FALSE> Using AND on the result from all
+  children.
+          1? <TRUE> UInteger : Service-Scenario(Mobile Originating) = Mobile Originating
+          2? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match SCAP_V.2.0@ericsson.com
+       ========================================== [Voice Callforwarding]
+        1? <FALSE> Using AND on the result from all children.
+         1? <FALSE> UInteger : Service-Scenario(Mobile Originating) = Mobile Forwarding
+      ========================================== [TDF_ZN_PKEY]
+       ========================================== [Destination Zain KSA New]
+        1? <TRUE> Using NOT on the result from all children.
+         1? <FALSE> String : TDF_ZN_PKEY("0") contains (case insensitive) "GVZNROAM"
+        ========================================== [National Calls]
+         1? <TRUE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         1! SetField : TDF_ZN_PKEY = "GVZN_NATZ1"
+        ========================================== [Emergency]
+         1? 
+ <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Customer Care]
+         1? <FALSE> Using OR on the result from all children.
+          1? <FALSE> String : Other-Party-Id-Address("966591367144") equals (case sensitive) "959"
+          2? <FALSE> String : Other-Party-Id-Address("966591367144") equals (case sensitive) "555"
+          3? <FALSE> String : Other-Party-Id-Address("966591367144") equals (case sensitive) "333"
+          4? <FALSE> String : Other-Party-Id-Address("966591367144") equals (case sensitive) "777"
+          5? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Customer Care 1]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Premium Number (7000)]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found i
+ n series
+        ========================================== [Premium Number (7002)]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Premium Number (7003)]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Premium Number (7004)]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Premium Number (7005)]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Premium Number (7006)]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Premium Number (7007)]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+      
+   ========================================== [Premium Number (7008)]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Premium Number (7009)]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Premium Number (Others)]
+         1? <FALSE> Using OR on the result from all children.
+          1? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case insensitive) an entry in list
+          2? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case insensitive) an entry in list
+          3? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case insensitive) an entry in list
+          4? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case insensitive) an entry in list
+          5? <FALSE> StringList : Other-Party-Id-
+ Address("966591367144") exactly matches (case insensitive) an entry in list
+          6? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case insensitive) an entry in list
+          7? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case insensitive) an entry in list
+          8? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case insensitive) an entry in list
+          9? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case insensitive) an entry in list
+          10? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case insensitive) an entry in list
+          11? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Free Toll phone Access Serv]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================
+ == [Universal Access Service]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+      ========================================== [TDF_ZP_PKEY]
+       ========================================== [Destination International]
+        ========================================== [Zone1]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Zone2]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Zone3]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Zone4]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Zone5]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+ 
+        ========================================== [Zone6]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Zone7]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Zone8]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Zone9]
+         1? <TRUE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [Azerbaijan]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [Iraq]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [Iran Islamic Republic of]
+          1? <FALSE> Nu
+ mberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [Jordan]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [Lebanon]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [Maldives]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [Nepal]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [Pakistan]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [Palestine State of]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        
+  ========================================== [Syrian Arab Republic]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [Yemen]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [Afghanistan]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [Bhutan]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [Myanmar]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [Mongolia]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [Sri Lanka]
+          1? <FA
+ LSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [Tajikistan]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [Turkmenistan]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [Uzbekistan]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [Georgia]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [India]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [Turkey]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+   
+       ========================================== [Bahrain]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [Kuwait]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [Oman]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [Qatar]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+         ========================================== [United Arab Emirates]
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+       ========================================== [Destination Zain KSA New]
+        ========================================== [National Calls]
+         1? <TRUE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+  
+        1! SetField : TDF_ZP_PKEY = "NAC"
+        ========================================== [Emergency]
+         1? <FALSE> Using OR on the result from all children.
+          1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+          2? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case insensitive) an entry in list
+        ========================================== [Illegal Overstays Reporting]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Traffic Police]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Border Security]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Narcotics Control]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367
+ 144) is found in series
+        ========================================== [High way security]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Ambulance]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Fire]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Police]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Min of Int (security rep)]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Min of Int (security rep) 1]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        =====================
+ ===================== [Customer Care]
+         1? <FALSE> Using OR on the result from all children.
+          1? <FALSE> String : Other-Party-Id-Address("966591367144") equals (case sensitive) "959"
+          2? <FALSE> String : Other-Party-Id-Address("966591367144") equals (case sensitive) "555"
+          3? <FALSE> String : Other-Party-Id-Address("966591367144") equals (case sensitive) "333"
+          4? <FALSE> String : Other-Party-Id-Address("966591367144") equals (case sensitive) "777"
+          5? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Customer Care 1]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Premium Number (7000)]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Premium Number (7002)]
+         1? <FALSE> Num
+ berSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Premium Number (7003)]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Premium Number (7004)]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Premium Number (7005)]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Premium Number (7006)]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Premium Number (7007)]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Premium Number (7008)]
+         1? <FALSE> NumberSeries : Othe
+ r-Party-Id-Address(966591367144) is found in series
+        ========================================== [Premium Number (7009)]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Premium Number (Others)]
+         1? <FALSE> Using OR on the result from all children.
+          1? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case insensitive) an entry in list
+          2? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case insensitive) an entry in list
+          3? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case insensitive) an entry in list
+          4? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case insensitive) an entry in list
+          5? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case insensitive) an entry in list
+          6? <FALSE> StringList 
+ : Other-Party-Id-Address("966591367144") exactly matches (case insensitive) an entry in list
+          7? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case insensitive) an entry in list
+          8? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case insensitive) an entry in list
+          9? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case insensitive) an entry in list
+          10? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case insensitive) an entry in list
+          11? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Free Toll phone Access Serv]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Universal Access Service]
+         1? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is fou
+ nd in series
+      ========================================== [TDF GL CODES]
+       1? <TRUE> ShortNumberList : Service class(8010) is found in list
+       ========================================== [TDF_GL_CODE]
+        ========================================== [HPLMN Service]
+         1? <FALSE> Using AND on the result from all children.
+          1? <TRUE> ShortNumberList : Service class(8010) is found in list
+          2? <FALSE> String : Voice("0") contains (case insensitive) "CUG"
+        ========================================== [Allnet Voice MOC&CallForwarding]
+         1? <TRUE> Using AND on the result from all children.
+          1? <TRUE> Using OR on the result from all children.
+           1? <TRUE> UInteger : Service-Scenario(Mobile Originating) = Mobile Originating
+          2? <TRUE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv2_V.1.0@ericsson.com
+          3? <TRUE> ULong : Service identifier(0) = 0
+          4? <TRUE> UInteger : Roaming-Positio
+ n(Inside HPLMN) = Inside HPLMN
+         1! SetField : TDF_GL_CODE = "401500X1201X0000X000X000"
+        ========================================== [Allnet Video]
+         1? <FALSE> Using AND on the result from all children.
+          1? <TRUE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv2_V.1.0@ericsson.com
+          2? <TRUE> UInteger : Roaming-Position(Inside HPLMN) = Inside HPLMN
+          3? <TRUE> UInteger : Service-Scenario(Mobile Originating) = Mobile Originating
+          4? <FALSE> ULong : Service identifier(0) = 7
+        ========================================== [International SMS & MMS]
+         1? <FALSE> Using OR on the result from all children.
+          1? <FALSE> Using AND on the result from all children.
+           1? <TRUE> UInteger : Service-Scenario(Mobile Originating) = Mobile Originating
+           2? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv3_V.1.0@ericsson.com
+          2? <FALSE> Using AND on t
+ he result from all children.
+           1? <TRUE> UInteger : Service-Scenario(Mobile Originating) = Mobile Originating
+           2? <FALSE> ULong : Service identifier(0) = 57
+        ========================================== [Voice CUG]
+         1? <FALSE> Using AND on the result from all children.
+          1? <TRUE> ShortNumberList : Service class(8010) is found in list
+          2? <TRUE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv2_V.1.0@ericsson.com
+          3? <TRUE> ULong : Service identifier(0) = 0
+          4? <TRUE> UInteger : Roaming-Position(Inside HPLMN) = Inside HPLMN
+          5? <TRUE> Using OR on the result from all children.
+           1? <TRUE> UInteger : Service-Scenario(Mobile Originating) = Mobile Originating
+          6? <FALSE> Using OR on the result from all children.
+           1? <FALSE> Using AND on the result from all children.
+            1? <TRUE> UInteger : Other-Party-Id-MNP-Result(2001 - Success) = 2001 - Success
+            
+ 2? <FALSE> NumberSeries : Other-Party-Id-MNP-RN([VALUE NOT FOUND]) is found in series
+           2? <FALSE> Using AND on the result from all children.
+            1? <TRUE> StringList : Other-Party-Id-Address("966591367144") begins with (case sensitive) an entry in list
+            2? <FALSE> Using NOT on the result from all children.
+             1? <TRUE> UInteger : Other-Party-Id-MNP-Result(2001 - Success) = 2001 - Success
+        ========================================== [Voice Mail call Fowarding]
+         1? <FALSE> Using AND on the result from all children.
+          1? <FALSE> Using AND on the result from all children.
+           1? <FALSE> UInteger : Roaming-Position(Inside HPLMN) = Outside HPLMN
+       ========================================== [TDF GL CODE]
+        ========================================== [International Calls]
+         1? <FALSE> Using AND on the result from all children.
+          1? <TRUE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAP
+ v2_V.1.0@ericsson.com
+          2? <TRUE> ULong : Service identifier(0) = 0
+          3? <TRUE> Using OR on the result from all children.
+           1? <TRUE> UInteger : Service-Scenario(Mobile Originating) = Mobile Originating
+          4? <TRUE> UInteger : Roaming-Position(Inside HPLMN) = Inside HPLMN
+          5? <FALSE> String : Voice("0") contains (case insensitive) "International"
+       ========================================== [TDF GL CODE]
+        ========================================== [Allnet Video]
+         1? <FALSE> Using AND on the result from all children.
+          1? <TRUE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv2_V.1.0@ericsson.com
+          2? <TRUE> UInteger : Roaming-Position(Inside HPLMN) = Inside HPLMN
+          3? <TRUE> UInteger : Service-Scenario(Mobile Originating) = Mobile Originating
+          4? <FALSE> ULong : Service identifier(0) = 7
+       ========================================== [TDF GL CODE]
+        ================
+ ========================== [ShortCodes]
+         1? <TRUE> Using NOT on the result from all children.
+          1? <FALSE> String : Other-Party-Id-Address("966591367144") begins with (case sensitive) "00"
+         ========================================== [Voice]
+          1? <TRUE> Using AND on the result from all children.
+           1? <TRUE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv2_V.1.0@ericsson.com
+           2? <TRUE> ULong : Service identifier(0) = 0
+          ========================================== [Check Number]
+           1? <FALSE> Using OR on the result from all children.
+            1? <FALSE> String : Other-Party-Id-Address("966591367144") equals (case sensitive) "7003"
+            2? <FALSE> String : Other-Party-Id-Address("966591367144") begins with (case sensitive) "96680"
+           2? <FALSE> Using OR on the result from all children.
+            1? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case sensiti
+ ve) an entry in list
+            2? <FALSE> StringList : Other-Party-Id-Address("966591367144") begins with (case sensitive) an entry in list
+            3? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case sensitive) an entry in list
+            4? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case sensitive) an entry in list
+            5? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case sensitive) an entry in list
+          ========================================== [Satellite Thuraya]
+           1? <FALSE> StringList : Other-Party-Id-Address("966591367144") is contained in (case insensitive) an entry in list
+         ========================================== [SMS]
+          1? <FALSE> Using AND on the result from all children.
+           1? <FALSE> ULong : Service identifier(0) = 4
+        ========================================== [SMS]
+         ========================================== [CUG SMS]
+ 
+          1? <FALSE> Using AND on the result from all children.
+           1? <FALSE> String : SMS("0") equals (case insensitive) "CUG"
+         ========================================== [On-Net]
+          1? <FALSE> Using AND on the result from all children.
+           1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv3_V.1.0@ericsson.com
+         ========================================== [Off-Net]
+          1? <FALSE> Using AND on the result from all children.
+           1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv3_V.1.0@ericsson.com
+         ========================================== [International]
+          1? <FALSE> Using AND on the result from all children.
+           1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv3_V.1.0@ericsson.com
+         ========================================== [OnNet]
+          1? <FALSE> Using AND on the result from all children.
+       
+     1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv3_V.1.0@ericsson.com
+         ========================================== [OffNet]
+          1? <FALSE> Using AND on the result from all children.
+           1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv3_V.1.0@ericsson.com
+         ========================================== [International]
+          1? <FALSE> Using AND on the result from all children.
+           1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv3_V.1.0@ericsson.com
+         ========================================== [International Roaming CAPv3]
+          1? <FALSE> Using AND on the result from all children.
+           1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv3_V.1.0@ericsson.com
+         ========================================== [International Roaming SCAPV2]
+          1? <FALSE> Using AND on the result from all 
+ children.
+           1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match SCAP_V.2.0@ericsson.com
+       ========================================== [TDF GL CODE]
+        ========================================== [MMS Allnet]
+         1? <FALSE> Using AND on the result from all children.
+          1? <FALSE> ULong : Service identifier(0) = 57
+       ========================================== [TDF GL CODE]
+        ========================================== [Data]
+         1? <FALSE> Using AND on the result from all children.
+          1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match Ericsson_OCS_V1_0.0.0.10.32251@3gpp.org
+        ========================================== [Scapv2 Services]
+         1? <FALSE> Using AND on the result from all children.
+          1? <FALSE> String : Charging context ID("CAPv2_V.1.0@ericsson.com") equals (case sensitive) "SCAP_V.2.0@ericsson.com"
+       ========================================== [TDF G
+ L CODE]
+        ========================================== [SMS]
+         ========================================== [CUG SMS]
+          1? <FALSE> Using AND on the result from all children.
+           1? <FALSE> String : SMS("0") equals (case insensitive) "CUG"
+         ========================================== [On-Net]
+          1? <FALSE> Using AND on the result from all children.
+           1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv3_V.1.0@ericsson.com
+         ========================================== [Off-Net]
+          1? <FALSE> Using AND on the result from all children.
+           1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv3_V.1.0@ericsson.com
+         ========================================== [International]
+          1? <FALSE> Using AND on the result from all children.
+           1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv3_V.1.0@ericsson.com
+    
+      ========================================== [OnNet]
+          1? <FALSE> Using AND on the result from all children.
+           1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv3_V.1.0@ericsson.com
+         ========================================== [OffNet]
+          1? <FALSE> Using AND on the result from all children.
+           1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv3_V.1.0@ericsson.com
+         ========================================== [International]
+          1? <FALSE> Using AND on the result from all children.
+           1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv3_V.1.0@ericsson.com
+         ========================================== [International Roaming CAPv3]
+          1? <FALSE> Using AND on the result from all children.
+           1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv3_V.1.0@ericsson.com
+         
+ ========================================== [International Roaming SCAPV2]
+          1? <FALSE> Using AND on the result from all children.
+           1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match SCAP_V.2.0@ericsson.com
+        ========================================== [9* Voice/SMS]
+         1? <FALSE> Using OR on the result from all children.
+          1? <FALSE> Using AND on the result from all children.
+           1? <FALSE> The list of Offer IDs was  NOT a match to the list in Rating Data
+          2? <FALSE> Using AND on the result from all children.
+           1? <FALSE> The list of Offer IDs was  NOT a match to the list in Rating Data
+          3? <FALSE> Using AND on the result from all children.
+           1? <FALSE> The list of Offer IDs was  NOT a match to the list in Rating Data
+          4? <FALSE> Using AND on the result from all children.
+           1? <FALSE> The list of Offer IDs was  NOT a match to the list in Rating Data
+          5? <FALS
+ E> Using AND on the result from all children.
+           1? <FALSE> The list of Offer IDs was  NOT a match to the list in Rating Data
+          6? <FALSE> Using AND on the result from all children.
+           1? <FALSE> The list of Offer IDs was  NOT a match to the list in Rating Data
+       ========================================== [TDF GL CODE]
+        ========================================== [National Roaming]
+         1? <FALSE> Using AND on the result from all children.
+          1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match Ericsson_OCS_V1_0.0.0.10.32251@3gpp.org
+        ========================================== [International Roaming]
+         1? <FALSE> Using AND on the result from all children.
+          1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match Ericsson_OCS_V1_0.0.0.10.32251@3gpp.org
+        ========================================== [OnNet]
+         1? <FALSE> Using AND on the result from all children.
+
+           1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv3_V.1.0@ericsson.com
+        ========================================== [OffNet]
+         1? <FALSE> Using AND on the result from all children.
+          1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv3_V.1.0@ericsson.com
+        ========================================== [On-Net]
+         1? <FALSE> Using AND on the result from all children.
+          1? <TRUE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv2_V.1.0@ericsson.com
+          2? <TRUE> ULong : Service identifier(0) = 0
+          3? <FALSE> UInteger : Roaming-Position(Inside HPLMN) = Outside HPLMN
+        ========================================== [Off-Net]
+         1? <FALSE> Using AND on the result from all children.
+          1? <FALSE> NumberSeries : Subscription-Id-Location(49) is found in series
+        ========================================== [On-Net]
+        
+  1? <FALSE> Using AND on the result from all children.
+          1? <TRUE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv2_V.1.0@ericsson.com
+          2? <TRUE> ULong : Service identifier(0) = 0
+          3? <FALSE> UInteger : Roaming-Position(Inside HPLMN) = Outside HPLMN
+        ========================================== [Off-Net]
+         1? <FALSE> Using AND on the result from all children.
+          1? <TRUE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv2_V.1.0@ericsson.com
+          2? <TRUE> ULong : Service identifier(0) = 0
+          3? <TRUE> Using OR on the result from all children.
+           1? <TRUE> UInteger : Service-Scenario(Mobile Originating) = Mobile Originating
+          4? <FALSE> UInteger : Roaming-Position(Inside HPLMN) = Outside HPLMN
+        ========================================== [International]
+         1? <FALSE> Using AND on the result from all children.
+          1? <FALSE> NumberSeries : Subscription
+ -Id-Location(49) is found in series
+        ========================================== [Local Terminating]
+         1? <FALSE> Using AND on the result from all children.
+          1? <TRUE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv2_V.1.0@ericsson.com
+          2? <TRUE> ULong : Service identifier(0) = 0
+          3? <FALSE> UInteger : Roaming-Position(Inside HPLMN) = Outside HPLMN
+        ========================================== [International Roaming [SCAPv2]]
+         1? <FALSE> Using AND on the result from all children.
+          1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match SCAP_V.2.0@ericsson.com
+        ========================================== [International Roaming]
+         1? <FALSE> Using AND on the result from all children.
+          1? <TRUE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv2_V.1.0@ericsson.com
+          2? <TRUE> ULong : Service identifier(0) = 0
+          3? <F
+ ALSE> UInteger : Roaming-Position(Inside HPLMN) = Outside HPLMN
+        ========================================== [International Roaming Terminating]
+         1? <FALSE> Using AND on the result from all children.
+          1? <TRUE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv2_V.1.0@ericsson.com
+          2? <TRUE> ULong : Service identifier(0) = 0
+          3? <FALSE> UInteger : Roaming-Position(Inside HPLMN) = Outside HPLMN
+        ========================================== [Voice Mail call Fowarding]
+         1? <FALSE> Using AND on the result from all children.
+          1? <FALSE> Using AND on the result from all children.
+           1? <FALSE> UInteger : Roaming-Position(Inside HPLMN) = Outside HPLMN
+      ========================================== [TDF GL CODES]
+       1? <FALSE> ShortNumberList : Service class(8010) is found in list
+      ========================================== [TDF_TT_PKEY]
+       1? <FALSE> Current time is NOT between 09:00:00 and 2
+ 0:59:59
+      ========================================== [TDF_TT_PKEY]
+       1? <TRUE> Current time IS between 21:00:00 and 08:59:59
+       1! SetField : TDF_TT_PKEY = "OFF-PEAK"
+      ========================================== [TDF_IS_PREPAID]
+       1? <FALSE> ShortNumberList : Service class(8010) is found in list
+      ========================================== [VAS HSDP TDF]
+       1? <FALSE> Using AND on the result from all children.
+        1? <FALSE> String : Charging context ID("CAPv2_V.1.0@ericsson.com") equals (case sensitive) "SCAP_V.2.0@ericsson.com"
+      ========================================== [SSCM Addon Renewal Charging B2B]
+       1? <FALSE> Using AND on the result from all children.
+        1? <FALSE> ShortNumberList : Service class(8010) is found in list
+      ========================================== [CBIO Pre-analysis]
+       1? <TRUE> ShortNumberList : Service class(8010) is found in list
+       ========================================== [TDF Context Definitions]
+    
+     ========================================== [IVR Toll free]
+         1? <FALSE> Using AND on the result from all children.
+          1? <TRUE> ULong : Service identifier(0) = 0
+          2? <TRUE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv2_V.1.0@ericsson.com
+          3? <TRUE> ShortNumberList : Service class(8010) is found in list
+          4? <FALSE> NumberSeries : Other-Party-Id-Address(966591367144) is found in series
+        ========================================== [Prefix]
+         1? <FALSE> Using AND on the result from all children.
+          1? <FALSE> String : Other-Party-Id-Prefix([VALUE NOT FOUND]) contains (case sensitive) "9*"
+        ========================================== [RG-50]
+         1? <FALSE> Using AND on the result from all children.
+          1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match Ericsson_OCS_V1_0.0.0.10.32251@3gpp.org
+        ========================================== [RCC]
+        
+  1? <FALSE> NumberSeries : Subscription-Id-Location(49) is found in series
+        ========================================== [ShortCodes & Premium Number]
+         1? <TRUE> Using NOT on the result from all children.
+          1? <FALSE> String : Other-Party-Id-Address("966591367144") begins with (case sensitive) "00"
+         ========================================== [Prime Numbers]
+          1? <FALSE> Using AND on the result from all children.
+           1? <TRUE> ULong : Service identifier(0) = 0
+           2? <TRUE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv2_V.1.0@ericsson.com
+           3? <FALSE> StringList : Other-Party-Id-Address("966591367144") begins with (case sensitive) an entry in list
+         ========================================== [Voice]
+          1? <TRUE> Using AND on the result from all children.
+           1? <TRUE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv2_V.1.0@ericsson.com
+           2? <TRUE> UL
+ ong : Service identifier(0) = 0
+          ========================================== [Check Number]
+           1? <FALSE> Using OR on the result from all children.
+            1? <FALSE> String : Other-Party-Id-Address("966591367144") equals (case sensitive) "7003"
+            2? <FALSE> String : Other-Party-Id-Address("966591367144") begins with (case sensitive) "96680"
+           2? <FALSE> Using OR on the result from all children.
+            1? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case sensitive) an entry in list
+            2? <FALSE> StringList : Other-Party-Id-Address("966591367144") begins with (case sensitive) an entry in list
+            3? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case sensitive) an entry in list
+            4? <FALSE> StringList : Other-Party-Id-Address("966591367144") exactly matches (case sensitive) an entry in list
+            5? <FALSE> StringList : Other-Party-Id-Address("966591367144") exact
+ ly matches (case sensitive) an entry in list
+          ========================================== [Satellite Thuraya]
+           1? <FALSE> StringList : Other-Party-Id-Address("966591367144") is contained in (case insensitive) an entry in list
+         ========================================== [SMS]
+          1? <FALSE> Using AND on the result from all children.
+           1? <FALSE> ULong : Service identifier(0) = 4
+        ========================================== [83103 Numbers]
+         1? <FALSE> Using AND on the result from all children.
+          1? <FALSE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv3_V.1.0@ericsson.com
+        ========================================== [Voice]
+         1? <TRUE> Using AND on the result from all children.
+          1? <TRUE> Using OR on the result from all children.
+           1? <TRUE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv2_V.1.0@ericsson.com
+          2? <TRUE> ULong : Service id
+ entifier(0) = 0
+         ========================================== [Landline]
+          1? <FALSE> Using AND on the result from all children.
+           1? <TRUE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv2_V.1.0@ericsson.com
+           2? <TRUE> ULong : Service identifier(0) = 0
+           3? <TRUE> Using OR on the result from all children.
+            1? <TRUE> UInteger : Service-Scenario(Mobile Originating) = Mobile Originating
+           4? <TRUE> UInteger : Roaming-Position(Inside HPLMN) = Inside HPLMN
+           5? <FALSE> StringList : Other-Party-Id-Address("966591367144") begins with (case sensitive) an entry in list
+         ========================================== [CUG]
+          1? <FALSE> Using AND on the result from all children.
+           1? <TRUE> ShortNumberList : Service class(8010) is found in list
+           2? <FALSE> String : Voice("0") contains (case insensitive) "CUG"
+         ========================================== [On-Net]
+      
+     1? <FALSE> Using AND on the result from all children.
+           1? <TRUE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv2_V.1.0@ericsson.com
+           2? <TRUE> ULong : Service identifier(0) = 0
+           3? <TRUE> Using OR on the result from all children.
+            1? <TRUE> UInteger : Service-Scenario(Mobile Originating) = Mobile Originating
+           4? <TRUE> UInteger : Roaming-Position(Inside HPLMN) = Inside HPLMN
+           5? <TRUE> UInteger : Other-Party-Id-MNP-Result(2001 - Success) = 2001 - Success
+           6? <FALSE> NumberSeries : Other-Party-Id-MNP-RN([VALUE NOT FOUND]) is found in series
+         ========================================== [Off-Net]
+          1? <FALSE> Using AND on the result from all children.
+           1? <TRUE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv2_V.1.0@ericsson.com
+           2? <TRUE> ULong : Service identifier(0) = 0
+           3? <TRUE> Using OR on the result from all childre
+ n.
+            1? <TRUE> UInteger : Service-Scenario(Mobile Originating) = Mobile Originating
+           4? <TRUE> UInteger : Roaming-Position(Inside HPLMN) = Inside HPLMN
+           5? <TRUE> UInteger : Other-Party-Id-MNP-Result(2001 - Success) = 2001 - Success
+           6? <FALSE> NumberSeries : Other-Party-Id-MNP-RN([VALUE NOT FOUND]) is found in series
+         ========================================== [On-Net]
+          1? <TRUE> Using AND on the result from all children.
+           1? <TRUE> CompareField : Charging context ID(CAPv2_V.1.0@ericsson.com) Exact_match CAPv2_V.1.0@ericsson.com
+           2? <TRUE> ULong : Service identifier(0) = 0
+           3? <TRUE> Using OR on the result from all children.
+            1? <TRUE> UInteger : Service-Scenario(Mobile Originating) = Mobile Originating
+           4? <TRUE> UInteger : Roaming-Position(Inside HPLMN) = Inside HPLMN
+           5? <TRUE> StringList : Other-Party-Id-Address("966591367144") begins with (case sensitive) an entry in list
+  
+         1! SetField : Voice = "OnNet"
+          2! SetField : TDF_ZN_PKEY = "GVZN_Voice_Onnet"
+          3! SetField : TDF_SN_PKEY = "Voice"
+          4! SetField : TDF_UMPKEY = "Sec"
+          5! Stopped tree execution
+
+Result:
+
+
+Parameters that were changed:
+
+Output Fields
+
+
+Output Tree defined variables
+TDF_TT_PKEY = OFF-PEAK
+TDF_SN_PKEY = Voice
+TDF_UMPKEY = Sec
+Voice = OnNet
+TDF_GL_CODE = 401500X1201X0000X000X000
+TDF_ZP_PKEY = NAC
+TDF_ZN_PKEY = GVZN_Voice_Onnet
+SMS = 0
+
+
+1554365683.515000[20190404 11:14:16.515000] Module: PSC-TrafficHandler/8.1/A/1 Event: Tree execution trace ID: 9900006 Type: 2269699863190011905 Count: 153386 Aff.Obj: 950032069 Info: Provider: DedicatedAccount RatingPlan: 77
+SDP local time: 2019-04-04 11:14:43 +03:00
+Start time: 2019-04-04 08:14:43 +00:00
+
+Print out of data set:
+  Account group id: 0
+  Service offerings: 0
+  FaF indicator: 0
+  Service class: 8010
+  Subscription type: -1
+  Community ID: 0
+  Main account: 0.000000
+  Dedicated Accounts: 
+ 
+   ID   Prod. ID  Balance         Start date     Expiry date     Empty level  Composite  DA type  DA owner  PAM relative dates  
+   ---  --------  --------------  -------------  --------------  -----------  ---------  -------  --------  ------------------  
+   500         0  1000000.000000  No start date  No expiry date           No         No    Money  Consumer                  No
+  Offers:
+   ID      Prod. ID  Offer type       Start date/time      Expiry date/time     Enabled  PAM relative dates  Fee Applied  
+   ------  --------  ---------------  -------------------  -------------------  -------  ------------------  -----------  
+    60000         0  ProviderAccount           2019-02-04            No expiry      Yes                  No          N/A  
+    88256         0          Account           2019-02-04            No expiry      Yes                  No          N/A  
+    88269         0          Account           2019-02-04            No expiry      Yes                  No          N/A  
+   
+  88282         0          Account           2019-02-04            No expiry      Yes                  No          N/A  
+    88360         0          Account           2019-02-04            No expiry      Yes                  No          N/A  
+    88373         0          Account           2019-02-04            No expiry      Yes                  No          N/A  
+    91207         0          Account           2019-02-04            No expiry      Yes                  No          N/A  
+   229523         6            Timer  2019-03-08 13:06:37  2019-04-07 13:06:37      Yes                  No          N/A  
+   229536         5            Timer  2019-03-08 13:06:37  2019-04-07 13:06:37      Yes                  No          N/A  
+   911760         0          Account           2019-02-04            No expiry      Yes                  No          N/A  
+   911770         0          Account           2019-02-04            No expiry      Yes                  No          N/A
+
+ Context specific information: 
+  
+ Charging context: CAPv2_V.1.0@ericsson.com
+  Service identifier: 0
+  Call setup result: Result NOT supplied
+  Subscription-Id-Address: 950032069
+  Service extension: Not set
+  Service scenario: Mobile Originating
+  Other-Party-Id-Data: 966591367144
+  Roaming position: Inside HPLMN
+  Other-Party-Id-MNP-Result: 2001 - Success
+  Other-Party-Id-Nature: 0 = Unknown
+  Other-Party-Id-Address: 966591367144
+  Subscription-Id-Location: 49
+
+
+
+
+ ========================================== [ZAINKSA_CBIO_DA_V39]
+  ========================================== [CBIO_DA]
+   ========================================== [CCS_Services]
+    1? <TRUE> ShortNumberList : Service class(8010) is found in list
+    ========================================== [Service Class TDF]
+     ========================================== [SC8000]
+      1? <FALSE> ShortNumberList : Service class(8010) is found in list
+     ========================================== [SC8005]
+      1? <FALSE> ShortNumberList : Service class(8010) is f
+ ound in list
+     ========================================== [SC8010]
+      1? <TRUE> ShortNumberList : Service class(8010) is found in list
+      1! SetField : TDF_Service_Class = 8010
+     ========================================== [SC8015]
+      1? <FALSE> ShortNumberList : Service class(8010) is found in list
+     ========================================== [SC8020]
+      1? <FALSE> ShortNumberList : Service class(8010) is found in list
+     ========================================== [SC8025]
+      1? <FALSE> ShortNumberList : Service class(8010) is found in list
+     ========================================== [SC8030]
+      1? <FALSE> ShortNumberList : Service class(8010) is found in list
+     ========================================== [SC8035]
+      1? <FALSE> ShortNumberList : Service class(8010) is found in list
+     ========================================== [SC8040]
+      1? <FALSE> ShortNumberList : Service class(8010) is found in list
+     ========================================== 
+ [SC8050]
+      1? <FALSE> ShortNumberList : Service class(8010) is found in list
+    ========================================== [Postpaid Addon Scapv2 Renewal]
+     1? <FALSE> Using AND on the result from all children.
+      1? <FALSE> String : Charging context ID("CAPv2_V.1.0@ericsson.com") equals (case sensitive) "SCAP_V.2.0@ericsson.com"
+    ========================================== [Postpaid Addon Scapv2 Renewal]
+     1? <FALSE> Using AND on the result from all children.
+      1? <FALSE> String : Charging context ID("CAPv2_V.1.0@ericsson.com") equals (case sensitive) "SCAP_V.2.0@ericsson.com"
+    ========================================== [Scapv2 Services [PostPaid Subscription]]
+     1? <FALSE> Using AND on the result from all children.
+      1? <FALSE> String : Charging context ID("CAPv2_V.1.0@ericsson.com") equals (case sensitive) "SCAP_V.2.0@ericsson.com"
+    ========================================== [Scapv2 Services VAS HSDP]
+     1? <FALSE> Using AND on the result from all children.
+ 
+      1? <FALSE> String : Charging context ID("CAPv2_V.1.0@ericsson.com") equals (case sensitive) "SCAP_V.2.0@ericsson.com"
+    ========================================== [9* Toggling Calls]
+     1? <FALSE> Using AND on the result from all children.
+      1? <TRUE> UInteger : Roaming-Position(Inside HPLMN) = Inside HPLMN
+      2? <FALSE> A com.ericsson.ere.dataset.DataSetValueNotFoundException: The field with tag '16778455' was not found in the data set! was thrown when printing trace for FieldSelection.
+    ========================================== [FnF Postpaid & Prepaid]
+     1? <TRUE> ShortNumberList : Service class(8010) is found in list
+     ========================================== [Local]
+      1? <FALSE> Using AND on the result from all children.
+       1? <TRUE> String : Voice("OnNet") equals (case insensitive) "OnNet"
+       2? <FALSE> UShortNumberList : FaF indicator(0) is found in list
+     ========================================== [International]
+      1? <FALSE> Using AND on the r
+ esult from all children.
+       1? <FALSE> String : Voice("OnNet") equals (case insensitive) "International"
+    ========================================== [CCS_Basic_Voice_Services Postpaid]
+     1? <TRUE> ShortNumberList : Service class(8010) is found in list
+     ========================================== [CUG Voice]
+      1? <FALSE> String : Voice("OnNet") contains (case insensitive) "CUG"
+     ========================================== [Voice]
+      1? <TRUE> Using AND on the result from all children.
+       1? <TRUE> Using OR on the result from all children.
+        1? <TRUE> UInteger : Service-Scenario(Mobile Originating) = Mobile Originating
+       2? <TRUE> Using OR on the result from all children.
+        1? <TRUE> String : Voice("OnNet") contains (case insensitive) "OnNet"
+      1! SetField : Resource Facing Service = "zainksa.ccs.voice.all"
+     ========================================== [Video]
+      1? <FALSE> Using AND on the result from all children.
+       1? <TRUE> UInteger : 
+ Service-Scenario(Mobile Originating) = Mobile Originating
+       2? <FALSE> Using OR on the result from all children.
+        1? <FALSE> String : Video("0") contains (case insensitive) "OnNet"
+        2? <FALSE> String : Video("0") contains (case insensitive) "OffNet"
+     ========================================== [Voice Call Forward]
+      1? <FALSE> Using AND on the result from all children.
+       1? <FALSE> UInteger : Service-Scenario(Mobile Originating) = Mobile Forwarding
+     ========================================== [SMS CUG]
+      1? <FALSE> String : SMS("0") equals (case insensitive) "CUG"
+     ========================================== [SMS]
+      1? <FALSE> Using OR on the result from all children.
+       1? <FALSE> String : SMS("0") equals (case insensitive) "OnNet"
+       2? <FALSE> String : SMS("0") equals (case insensitive) "ShortCode"
+       3? <FALSE> String : SMS("0") equals (case insensitive) "OffNet"
+       4? <FALSE> String : SMS("0") equals (case insensitive) "Internatio
+ nal"
+     ========================================== [Data Blackberry]
+      1? <FALSE> Using OR on the result from all children.
+       1? <FALSE> UInteger : Rating-Group([VALUE NOT FOUND]) = 100
+       2? <FALSE> UInteger : Rating-Group([VALUE NOT FOUND]) = 101
+      2? <FALSE> String : Data("0") equals (case insensitive) "Local"
+     ========================================== [Data]
+      1? <FALSE> Using OR on the result from all children.
+       1? <FALSE> UInteger : Rating-Group([VALUE NOT FOUND]) = 60
+       2? <FALSE> UInteger : Rating-Group([VALUE NOT FOUND]) = 50
+       3? <FALSE> Revision : Data_RG(False) is equal or higher revision than True
+      2? <FALSE> String : Data("0") equals (case insensitive) "Local"
+     ========================================== [MMS]
+      ========================================== [On-Net/Off-Net/International]
+       1? <FALSE> Using OR on the result from all children.
+        1? <FALSE> String : MMS("0") contains (case insensitive) "OffNet"
+        
+ 2? <FALSE> String : MMS("0") contains (case insensitive) "International"
+        3? <FALSE> String : MMS("0") contains (case insensitive) "OnNet"
+    ========================================== [CCS_Basic_Voice_Services Prepaid]
+     1? <FALSE> ShortNumberList : Service class(8010) is found in list
+    ========================================== [HYBRID OPPORTUNITY]
+     1? <FALSE> ShortNumberList : Service class(8010) is found in list
+    ========================================== [Prepaid International Roaming PAYG & Bundles]
+     1? <FALSE> ShortNumberList : Service class(8010) is found in list
+    ========================================== [Postpaid International Roaming PAYG & Bundles]
+     1? <TRUE> ShortNumberList : Service class(8010) is found in list
+     ========================================== [Voice]
+      ========================================== [Voice]
+       1? <FALSE> Using OR on the result from all children.
+        1? <FALSE> String : Voice("OnNet") equals (case insensitive) "
+ Roam"
+        2? <FALSE> String : Voice("OnNet") equals (case insensitive) "RoamMT"
+      ========================================== [Voice_Bar]
+       1? <FALSE> Using AND on the result from all children.
+        1? <FALSE> The list of Offer IDs was  NOT a match to the list in Rating Data
+     ========================================== [SMS]
+      ========================================== [SMS]
+       1? <FALSE> Using OR on the result from all children.
+        1? <FALSE> String : SMS("0") equals (case insensitive) "Roam"
+        2? <FALSE> String : SMS("0") equals (case insensitive) "RoamCAPv3"
+      ========================================== [SMS_Bar]
+       1? <FALSE> Using AND on the result from all children.
+        1? <FALSE> The list of Offer IDs was  NOT a match to the list in Rating Data
+     ========================================== [Data]
+      ========================================== [Data]
+       1? <FALSE> String : Data("0") equals (case insensitive) "Roam"
+      ===========
+ =============================== [Data_Bar]
+       1? <FALSE> Using AND on the result from all children.
+        1? <FALSE> String : Data("0") equals (case insensitive) "Roam"
+    ========================================== [Youtube]
+     1? <FALSE> Using AND on the result from all children.
+      1? <FALSE> UInteger : Rating-Group([VALUE NOT FOUND]) = 500
+    ========================================== [SocialMedia]
+     1? <FALSE> Using AND on the result from all children.
+      1? <FALSE> String : Data("0") equals (case sensitive) "PCRF"
+    ========================================== [GoogleMaps]
+     1? <FALSE> Using AND on the result from all children.
+      1? <FALSE> String : Data("0") equals (case sensitive) "PCRF"
+    ========================================== [OSN Wavo]
+     1? <FALSE> Using AND on the result from all children.
+      1? <FALSE> String : Data("0") equals (case sensitive) "PCRF"
+    ========================================== [zainksavoiceINTBonusCredit]
+     1? <FALSE> Us
+ ing AND on the result from all children.
+      1? <FALSE> String : Voice("OnNet") contains (case insensitive) "International"
+    ========================================== [LMS 35 SAR Bonus]
+     1? <FALSE> Using AND on the result from all children.
+      1? <TRUE> String : Voice("OnNet") equals (case insensitive) "Onnet"
+      2? <FALSE> The list of Offer IDs was  NOT a match to the list in Rating Data
+    ========================================== [Shared Data Threshold Setting]
+     1? <FALSE> Long : DA non-monetary value before[859]([VALUE NOT FOUND]) > 0
+     1? Execution ERROR:
+     1?  java.lang.NullPointerException
+
+Result:
+Selected DAs: none
+Resource Facing Service: "zainksa.ccs.voice.all"
+
+   Selected Offers:
+   ID        [DA IDs]    Include Main  Rule  Resource Facing Service  [Automatic UC IDs]  Selected By  Major Priority  Minor Priority  
+   --------  ----------  ------------  ----  -----------------------  ------------------  -----------  --------------  --------------  
+    
+   17601          []         false     0        zainksa.ccs.voice                  []          RFS             100                  
+          1          []         false     0        zainksa.ccs.voice                  []          RFS                                  
+     528817          []         false     1    zainksa.ccs.voice.all                  []          RFS             220                  
+          2          []         false     0        zainksa.ccs.voice                  []          RFS             700                  
+     202600          []         false     1    zainksa.ccs.voice.all                  []          RFS             220                  
+      17602          []         false     0        zainksa.ccs.voice                  []          RFS             100                  
+     210179          []         false     1        zainksa.ccs.voice                  []          RFS             210                  
+     105097       [494]         false     1              zainksa.ccs 
+                  []          RFS             170                  
+         12       [525]         false     1        zainksa.ccs.voice                [12]          RFS             300                  
+         13       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+     105096       [350]         false     1              zainksa.ccs      [60405, 60413]          RFS             170                  
+         14       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+         15       [521]         false     1        zainksa.ccs.voice                [15]          RFS             100                  
+         17       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+         16       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                 
+  
+         19       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+         18       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+         21       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+         20       [522]         false     1        zainksa.ccs.voice                [20]          RFS             200                  
+     504901          []          true     1        zainksa.ccs.voice                  []          RFS             310                  
+         23       [501]         false     1        zainksa.ccs.voice                  []          RFS             300                  
+         22       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+     902970          []         false     1    zainksa.ccs.voi
+ ce.all                  []          RFS             220                  
+     105107       [101]         false     1        zainksa.ccs.voice             [60406]          RFS             170                  
+         25       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+         24       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+         27       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+         26       [525]         false     1        zainksa.ccs.voice                [26]          RFS             200                  
+         29       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+         28       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300          
+         
+     105115       [494]         false     1        zainksa.ccs.voice             [60405]          RFS             170                  
+         30       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+     105127       [376]         false     1        zainksa.ccs.voice             [60408]          RFS             170                  
+     217992       [501]         false     1    zainksa.ccs.voice.all          [500, 501]          RFS             290                  
+     105125       [491]         false     1        zainksa.ccs.voice             [60416]          RFS             170                  
+    2013120          []          true     1        zainksa.ccs.voice                  []          RFS             265                  
+     105122       [375]         false     1        zainksa.ccs.voice             [60406]          RFS             170                  
+     105133       [310]         false     1        zain
+ ksa.ccs.voice             [60405]          RFS             170                  
+     105131       [481]         false     1        zainksa.ccs.voice             [60405]          RFS             170                  
+     528797          []         false     1    zainksa.ccs.voice.all                  []          RFS             220                  
+     105128      [1000]         false     1        zainksa.ccs.voice             [60415]          RFS              90                  
+         51       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+     105140       [451]         false     1        zainksa.ccs.voice             [60405]          RFS             170                  
+     202587       [501]         false     1    zainksa.ccs.voice.all          [500, 501]          RFS             290                  
+     902940          []          true     1        zainksa.ccs.voice                  []          RFS             310   
+                
+         55       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+     105138       [482]         false     1        zainksa.ccs.voice             [60406]          RFS             170                  
+         54       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+     105139       [483]         false     1        zainksa.ccs.voice             [60408]          RFS             170                  
+         53       [515]         false     1        zainksa.ccs.voice                [53]          RFS             100                  
+         52       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+         59       [511]         false     1        zainksa.ccs.voice                [59]          RFS             200                  
+     528777          []         false     1    z
+ ainksa.ccs.voice.all                  []          RFS             220                  
+         57       [515]         false     1        zainksa.ccs.voice                [57]          RFS             100                  
+         56       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+     225779          []         false     1    zainksa.ccs.voice.all                  []          RFS               1                  
+         63       [512]         false     1        zainksa.ccs.voice                [63]          RFS             200                  
+         62       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+         61       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+         60       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS            
+  300                  
+     244941          []          true     1        zainksa.ccs.voice                  []          RFS             310                  
+         70       [512]         false     1        zainksa.ccs.voice                [70]          RFS             200                  
+     105157       [454]         false     1        zainksa.ccs.voice             [60405]          RFS             170                  
+         64       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+     252520       [501]         false     1    zainksa.ccs.voice.all               [499]          RFS              50                  
+         65       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+     105159       [486]         false     1        zainksa.ccs.voice             [60415]          RFS             170                  
+         66       [501]         false    
+  1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+         67       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             100                  
+     105161       [486]         false     1        zainksa.ccs.voice             [60415]          RFS             170                  
+         77       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+     202535       [501]         false     1    zainksa.ccs.voice.all          [500, 501]          RFS             290                  
+     105165       [488]         false     1        zainksa.ccs.voice             [60408]          RFS             170                  
+         72       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+     105164       [484]         false     1        zainksa.ccs.voice             [60406]          RFS     
+         170                  
+         73       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+     105167       [491]         false     1        zainksa.ccs.voice             [60416]          RFS             170                  
+         74       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+    2013100          []          true     1        zainksa.ccs.voice                  []          RFS             265                  
+     273138          []         false     1    zainksa.ccs.voice.all                  []          RFS             220                  
+         75       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+         85       [512]         false     1        zainksa.ccs.voice                [85]          RFS             200                  
+     504836          []          t
+ rue     1        zainksa.ccs.voice                  []          RFS             310                  
+         84       [513]         false     1        zainksa.ccs.voice                [84]          RFS             200                  
+     105170       [101]         false     1        zainksa.ccs.voice             [60406]          RFS             170                  
+         86       [617]         false     1        zainksa.ccs.voice                [86]          RFS             100                  
+         81       [511]         false     1        zainksa.ccs.voice                [81]          RFS             200                  
+    2013110          []         false     1        zainksa.ccs.voice                  []          RFS             210                  
+         83       [513]         false     1        zainksa.ccs.voice                  []          RFS             200                  
+         82       [513]         false     1        zainksa.ccs.voice                [82]          R
+ FS             200                  
+     528877          []         false     1    zainksa.ccs.voice.all                  []          RFS             220                  
+         92       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+         95       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+         94       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+         89       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+         90       [501]         false     1        zainksa.ccs.voice          [500, 501]          RFS             300                  
+        102       [501]         false     1        zainksa.ccs.voice               [501]          RFS             300                  
+        103       [501]    

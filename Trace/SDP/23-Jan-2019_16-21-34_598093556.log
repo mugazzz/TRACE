@@ -1,0 +1,2023 @@
+ sdpuser@RY1SDPTB>
+ cd /var/opt/fds/logs
+ 
+sdpuser@RY1SDPTB>
+sdpuser@RY1SDPTB>tail -0f TraceEventLogFile.txt.0 | grep 598093556 | tr "|" "\n" 
+
+ 1548240712.268000[20190123 13:51:25.268000] Module: PSC-SubscriberHandler/8.2/A/1 Event: OperationManager: Trace of input message, RequestData and ChargingState ID: 5000100 Type: 2269699863188406273 Count: 35068 Aff.Obj: 598093556 Info: 
+<request>
+   <header>
+      <subscriberId>
+         <type>AST_MSISDN_INTERNATIONAL</type>
+         <data>598093556</data>
+      </subscriberId>
+   </header>
+   <data>
+      <originNodeType>SDP</originNodeType>
+      <originNodeId>RY1SDPTB</originNodeId>
+      <transactionId>248462706452343436</transactionId>
+      <currentLocalTime/>
+      <transactionDateTime>
+         <year>2019</year>
+         <month>1</month>
+         <day>23</day>
+         <hour>13</hour>
+         <minute>51</minute>
+         <second>52</second>
+         <offset>180</offset>
+      </transactionDateTime>
+      <subscriberOperation>OP_GET</subscriberOperation>
+      <actionRequest disc="OP_GET">
+         <activate>false</activate>
+         <clearPromotionNotification>false</clearPr
+ omotionNotification>
+         <setFirstIVRCallDone>false</setFirstIVRCallDone>
+         <returnSCChangeUnbarDate>false</returnSCChangeUnbarDate>
+         <returnFaFChangeUnbarDate>false</returnFaFChangeUnbarDate>
+         <returnAttributes>true</returnAttributes>
+         <returnTreeParameters>true</returnTreeParameters>
+         <returnTimeBasedActions>true</returnTimeBasedActions>
+         <rejectDoubleIVRFlagSet>false</rejectDoubleIVRFlagSet>
+         <requireNumberNormalization>false</requireNumberNormalization>
+         <getChargingRequest/>
+         <getSubscriberRequest>
+            <returnAdditionalInfo>true</returnAdditionalInfo>
+         </getSubscriberRequest>
+         <getDedicatedAccountRequest>
+            <responseLevel>1</responseLevel>
+            <createMissingDAs>false</createMissingDAs>
+         </getDedicatedAccountRequest>
+         <getAccumulatorRequest>
+            <createMissingUAs>false</createMissingUAs>
+         </getAccumulatorRequest>
+         <getAccountManag
+ ementCounterRequest>
+            <dummy>false</dummy>
+         </getAccountManagementCounterRequest>
+         <getPromotionPlanRequest>
+            <dummy>false</dummy>
+         </getPromotionPlanRequest>
+         <getSubscriberFaFRequest>
+            <dummy>false</dummy>
+         </getSubscriberFaFRequest>
+         <getAccountFaFRequest>
+            <dummy>false</dummy>
+         </getAccountFaFRequest>
+         <getAccountServiceFeeRequest>
+            <dummy>false</dummy>
+         </getAccountServiceFeeRequest>
+         <getOfferRequest>
+            <returnAllOffers>true</returnAllOffers>
+            <returnRemovalProtectionPeriodOffers>true</returnRemovalProtectionPeriodOffers>
+            <returnAllOfferData>true</returnAllOfferData>
+            <returnDedicatedAccounts>true</returnDedicatedAccounts>
+            <returnSubDedicatedAccounts>true</returnSubDedicatedAccounts>
+            <returnFaFNumbers>true</returnFaFNumbers>
+            <returnClosestAccessibleAndExpiry>true</return
+ ClosestAccessibleAndExpiry>
+            <returnUsageCountersAndThresholds>true</returnUsageCountersAndThresholds>
+            <returnConnectedResources>false</returnConnectedResources>
+            <returnAccountOffers>true</returnAccountOffers>
+            <returnMultiUserIdentificationOffers>true</returnMultiUserIdentificationOffers>
+            <returnTimerOffers>true</returnTimerOffers>
+            <returnProviderAccountOffers>true</returnProviderAccountOffers>
+            <returnSharedAccountOffers>true</returnSharedAccountOffers>
+            <returnIntegerAttributes>true</returnIntegerAttributes>
+            <returnConsumerAndProviderOwnedTreeParameters>true</returnConsumerAndProviderOwnedTreeParameters>
+            <associatedPartyId/>
+         </getOfferRequest>
+         <getPamRequest>
+            <returnNextPeriodInfo>false</returnNextPeriodInfo>
+         </getPamRequest>
+         <getUsageCounterAndThresholdRequest>
+            <associatedPartyId>
+               <type>AST_MSISDN_INT
+ ERNATIONAL</type>
+               <data>598093556</data>
+            </associatedPartyId>
+            <includeConsumerUsageCounters>true</includeConsumerUsageCounters>
+         </getUsageCounterAndThresholdRequest>
+         <getPeriodicAdjustmentRequest>
+            <dummy>false</dummy>
+         </getPeriodicAdjustmentRequest>
+         <getCommunicationIdChangeRequest/>
+         <getTimeRestrictionRequest>
+         </getTimeRestrictionRequest>
+         <getSubscriberAnalysisRequest/>
+         <getDynamicDiscountRequest/>
+      </actionRequest>
+      <operand disc="OT_SUBSCRIBER">
+         <ID>
+            <type>AST_MSISDN_INTERNATIONAL</type>
+            <data>598093556</data>
+         </ID>
+      </operand>
+      <customization>
+         <customizationData/>
+      </customization>
+      <useStandardCompositeDedicatedAccount>false</useStandardCompositeDedicatedAccount>
+      <scheduledJobInitiated>false</scheduledJobInitiated>
+      <shouldBeSerialized>false</shouldBeSerialized>
+     
+  <isOriginatingFromLocalProvider>false</isOriginatingFromLocalProvider>
+      <suppressLocalProviderValidation>false</suppressLocalProviderValidation>
+      <isInternalSubscriberTransfer>false</isInternalSubscriberTransfer>
+      <processOnlyIfAwake>true</processOnlyIfAwake>
+   </data>
+</request>
+
+1548240712.298000[20190123 13:51:25.298000] Module: PSC-SubscriberHandler/8.2/A/1 Event: OperationManager: Trace of output message, ResultData and ChargingState ID: 5000101 Type: 2269699863188406273 Count: 35068 Aff.Obj: 598093556 Info: 
+<result>
+   <header>
+      <subscriberId>
+         <type>AST_MSISDN_INTERNATIONAL</type>
+         <data>598093556</data>
+      </subscriberId>
+   </header>
+   <data>
+      <result>
+         <code>OK</code>
+         <optionalActionResult disc="OP_GET">
+            <master>
+               <type>AST_MSISDN_SUBSCRIBER</type>
+               <data>598093556</data>
+            </master>
+            <masterSubordinateFlag>false</masterSubordinateFlag>
+            <cu
+ rrency>false</currency>
+            <language>1</language>
+            <serviceClass>8000</serviceClass>
+            <originalServiceClass/>
+            <temporaryBlockedFlag>false</temporaryBlockedFlag>
+            <activatedAfter>true</activatedAfter>
+            <twoStepActivationModeAfter>false</twoStepActivationModeAfter>
+            <negativeBalanceBarredAfter>false</negativeBalanceBarredAfter>
+            <serviceFeeWarningAfter>true</serviceFeeWarningAfter>
+            <supervisionWarningAfter>false</supervisionWarningAfter>
+            <serviceFeeExpiredAfter>false</serviceFeeExpiredAfter>
+            <supervisionExpiredAfter>false</supervisionExpiredAfter>
+            <activatedBefore>true</activatedBefore>
+            <twoStepActivationModeBefore>false</twoStepActivationModeBefore>
+            <negativeBalanceBarredBefore>false</negativeBalanceBarredBefore>
+            <serviceFeeWarningBefore>true</serviceFeeWarningBefore>
+            <supervisionWarningBefore>false</supervisionWar
+ ningBefore>
+            <serviceFeeExpiredBefore>false</serviceFeeExpiredBefore>
+            <supervisionExpiredBefore>false</supervisionExpiredBefore>
+            <getChargingResult/>
+            <getSubscriberResult>
+               <tempServiceClassExpiryDate/>
+               <communityIdList>[]</communityIdList>
+               <serviceFeeExpiryDate>17988</serviceFeeExpiryDate>
+               <supervisionExpiryDate>17958</supervisionExpiryDate>
+               <maxSupervisionPeriod>9999</maxSupervisionPeriod>
+               <maxServiceFeePeriod>9999</maxServiceFeePeriod>
+               <creditClearanceGracePeriod>80</creditClearanceGracePeriod>
+               <serviceRemovalGracePeriod>963</serviceRemovalGracePeriod>
+               <negativeBalanceBarringDate/>
+               <activationDate>17868</activationDate>
+               <accountCreationDate/>
+               <refillUnbarDateTime/>
+               <refillFraudCounter>0</refillFraudCounter>
+               <firstIvrCallFlag>false</first
+ IvrCallFlag>
+               <promotionNotificationCode/>
+               <voiceMOBarred>true</voiceMOBarred>
+               <voiceMTBarred>true</voiceMTBarred>
+               <sMSMOBarred>true</sMSMOBarred>
+               <sMSMTBarred>true</sMSMTBarred>
+               <gPRSBarred>true</gPRSBarred>
+               <data3gBarred>false</data3gBarred>
+               <data4gBarred>false</data4gBarred>
+               <ussdEocnSelectionId>77</ussdEocnSelectionId>
+               <balance>
+                  <currencyCode>682</currencyCode>
+                  <value>36397500</value>
+                  <exponent>-6</exponent>
+               </balance>
+               <aggregatedBalance/>
+               <reservation/>
+               <aggregatedReservation/>
+               <pinCode/>
+               <scChangeUnbarDate/>
+               <accountHomeRegion>0</accountHomeRegion>
+               <accountGroupId>0</accountGroupId>
+               <serviceOfferings>0</serviceOfferings>
+               <promotionPla
+ nId/>
+               <promotionStartDate/>
+               <promotionEndDate/>
+               <promotionRefillValue/>
+               <promotionProgressValue/>
+               <promotionRefillCounter/>
+               <promotionProgressCounter/>
+               <activeDays>51</activeDays>
+               <accountTimeZone>Asia/Riyadh</accountTimeZone>
+               <accountPrepaidEmptyLimit/>
+               <serviceFeeDoneDate/>
+               <additionalInfo>
+                  <firstCallDone>17868</firstCallDone>
+                  <specialAnnouncementPlayed>0</specialAnnouncementPlayed>
+                  <serviceFeeWarningPlayed>17868</serviceFeeWarningPlayed>
+                  <supervisionWarningPlayed>0</supervisionWarningPlayed>
+                  <lowLevelWarningPlayed>0</lowLevelWarningPlayed>
+                  <lowLevelWarning>false</lowLevelWarning>
+                  <subscriberFafServiceCharged>false</subscriberFafServiceCharged>
+                  <isConverged>false</isConverged>
+       
+            <voiceMOBarred>true</voiceMOBarred>
+                  <voiceMTBarred>true</voiceMTBarred>
+                  <sMSMOBarred>true</sMSMOBarred>
+                  <sMSMTBarred>true</sMSMTBarred>
+                  <gPRSBarred>true</gPRSBarred>
+                  <data3gBarred>false</data3gBarred>
+                  <data4gBarred>false</data4gBarred>
+                  <subscriberDisconnect>false</subscriberDisconnect>
+                  <accountDisconnect>false</accountDisconnect>
+                  <previousServiceFeeDoneDate>0</previousServiceFeeDoneDate>
+                  <reservations>
+                     <currencyCode>682</currencyCode>
+                     <value>0</value>
+                     <exponent>-6</exponent>
+                  </reservations>
+                  <subordinateSeq>598093556</subordinateSeq>
+                  <isMarkedForRerating>false</isMarkedForRerating>
+               </additionalInfo>
+               <localProviderType/>
+               <isLocalConsumer>false</i
+ sLocalConsumer>
+            </getSubscriberResult>
+            <getDedicatedAccountResult>
+               <dedicatedAccountSeq index="1">
+                  <dedicatedAccountId>408</dedicatedAccountId>
+                  <productId>0</productId>
+                  <externalProductId/>
+                  <balance>
+                     <currencyCode>682</currencyCode>
+                     <value>0</value>
+                     <exponent>-6</exponent>
+                  </balance>
+                  <activeBalance>
+                     <currencyCode>682</currencyCode>
+                     <value>0</value>
+                     <exponent>-6</exponent>
+                  </activeBalance>
+                  <reservation/>
+                  <amountAdded/>
+                  <amountCleared/>
+                  <compositeDedicatedAccount>false</compositeDedicatedAccount>
+                  <expiryDate>0</expiryDate>
+                  <startDate>0</startDate>
+                  <closestExpiryDate/>
+          
+         <closestExpiryBalance/>
+                  <closestAccessibleBalance/>
+                  <closestAccessibleDate/>
+                  <campaignIdentifier>0</campaignIdentifier>
+                  <realMoneyFlag>false</realMoneyFlag>
+                  <offerId/>
+                  <unitType>1</unitType>
+                  <expiredFlag>false</expiredFlag>
+                  <pamServiceId/>
+                  <resourceConnected>false</resourceConnected>
+               </dedicatedAccountSeq>
+               <dedicatedAccountSeq index="2">
+                  <dedicatedAccountId>409</dedicatedAccountId>
+                  <productId>0</productId>
+                  <externalProductId/>
+                  <balance>
+                     <currencyCode>682</currencyCode>
+                     <value>0</value>
+                     <exponent>-6</exponent>
+                  </balance>
+                  <activeBalance>
+                     <currencyCode>682</currencyCode>
+                     <value>0</valu
+ e>
+                     <exponent>-6</exponent>
+                  </activeBalance>
+                  <reservation/>
+                  <amountAdded/>
+                  <amountCleared/>
+                  <compositeDedicatedAccount>false</compositeDedicatedAccount>
+                  <expiryDate>0</expiryDate>
+                  <startDate>0</startDate>
+                  <closestExpiryDate/>
+                  <closestExpiryBalance/>
+                  <closestAccessibleBalance/>
+                  <closestAccessibleDate/>
+                  <campaignIdentifier>0</campaignIdentifier>
+                  <realMoneyFlag>false</realMoneyFlag>
+                  <offerId/>
+                  <unitType>1</unitType>
+                  <expiredFlag>false</expiredFlag>
+                  <pamServiceId/>
+                  <resourceConnected>false</resourceConnected>
+               </dedicatedAccountSeq>
+            </getDedicatedAccountResult>
+            <getAccumulatorResult>
+               <accumulatorSeq i
+ ndex="1">
+                  <accumulatorId>50</accumulatorId>
+                  <value>1</value>
+                  <clearingDate>17868</clearingDate>
+                  <resetDate>0</resetDate>
+               </accumulatorSeq>
+               <accumulatorSeq index="2">
+                  <accumulatorId>60</accumulatorId>
+                  <value>1</value>
+                  <clearingDate>17868</clearingDate>
+                  <resetDate>32767</resetDate>
+               </accumulatorSeq>
+               <accumulatorSeq index="3">
+                  <accumulatorId>61</accumulatorId>
+                  <value>1</value>
+                  <clearingDate>17868</clearingDate>
+                  <resetDate>0</resetDate>
+               </accumulatorSeq>
+               <accumulatorSeq index="4">
+                  <accumulatorId>100</accumulatorId>
+                  <value>0</value>
+                  <clearingDate>17899</clearingDate>
+                  <resetDate>17930</resetDate>
+               </accumula
+ torSeq>
+            </getAccumulatorResult>
+            <getAccountManagementCounterResult>
+               <accountManagementCounterSeq index="1">
+                  <type>202</type>
+                  <totalValue>0</totalValue>
+                  <periodValue>0</periodValue>
+                  <clearingDate>17869</clearingDate>
+               </accountManagementCounterSeq>
+            </getAccountManagementCounterResult>
+            <getPromotionPlanResult/>
+            <getSubscriberFaFResult>
+               <additionalInfo>
+                  <fafChangeUnbarDate/>
+                  <maxAllowedNumbers/>
+                  <notAllowedForServiceClass>false</notAllowedForServiceClass>
+               </additionalInfo>
+            </getSubscriberFaFResult>
+            <getAccountFaFResult/>
+            <getAccountServiceFeeResult>
+            </getAccountServiceFeeResult>
+            <getOfferResult>
+               <offerSeq index="1">
+                  <offerId>77570</offerId>
+                
+   <productOfferingName/>
+                  <productId>0</productId>
+                  <externalProductId/>
+                  <expiryDate>0</expiryDate>
+                  <startDate>17868</startDate>
+                  <expiryDateTime/>
+                  <startDateTime/>
+                  <typeOfOffer>0</typeOfOffer>
+                  <state/>
+                  <feeApplied/>
+                  <providerId/>
+                  <pamServiceId/>
+                  <attributeSeq index="1">
+                     <action/>
+                     <name>ADMINExternalProductIdentifier</name>
+                     <valueString>280001592358463</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source/>
+                  </attributeSeq>
+                  <attributeSeq index="2">
+                     <action/>
+                     <name>CFSSID</name>
+                     <valueString>PR_ACTIVATION_CHARGE_CFSS</valueSt
+ ring>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="3">
+                     <action/>
+                     <name>FirstCallCharge</name>
+                     <valueString/>
+                     <valueDate/>
+                     <valueNumber>
+                        <currencyCode>0</currencyCode>
+                        <value>5000000000000000</value>
+                        <exponent>-15</exponent>
+                     </valueNumber>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="4">
+                     <action/>
+                     <name>InitialCreditClearancePeriod</name>
+                     <valueString/>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueIntege
+ r>80</valueInteger>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="5">
+                     <action/>
+                     <name>InitialMAbalance</name>
+                     <valueString/>
+                     <valueDate/>
+                     <valueNumber>
+                        <currencyCode>0</currencyCode>
+                        <value>30000000000000000</value>
+                        <exponent>-15</exponent>
+                     </valueNumber>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="6">
+                     <action/>
+                     <name>InitialServiceFeeExpiry</name>
+                     <valueString/>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger>120</valueInteger>
+                     <source>1</source>
+                  </attributeSeq>
+ 
+                  <attributeSeq index="7">
+                     <action/>
+                     <name>InitialServiceRemovalPeriod</name>
+                     <valueString/>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger>1023</valueInteger>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="8">
+                     <action/>
+                     <name>InitialSupervisionPeriod</name>
+                     <valueString/>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger>60</valueInteger>
+                     <source/>
+                  </attributeSeq>
+                  <attributeSeq index="9">
+                     <action/>
+                     <name>PAMClassID</name>
+                     <valueString>100</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteg
+ er/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="10">
+                     <action/>
+                     <name>PAMScheduleID</name>
+                     <valueString>0</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="11">
+                     <action/>
+                     <name>POID</name>
+                     <valueString>PR_KNOCKOUT_PAYG_PO</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="12">
+                     <action/>
+                     <name>TemplateVersion</name>
+                     <valueString>1.1</valueString>
+                     <valu
+ eDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+               </offerSeq>
+               <offerSeq index="2">
+                  <offerId>77583</offerId>
+                  <productOfferingName/>
+                  <productId>0</productId>
+                  <externalProductId/>
+                  <expiryDate>0</expiryDate>
+                  <startDate>17868</startDate>
+                  <expiryDateTime/>
+                  <startDateTime/>
+                  <typeOfOffer>0</typeOfOffer>
+                  <state/>
+                  <feeApplied/>
+                  <providerId/>
+                  <pamServiceId/>
+                  <attributeSeq index="1">
+                     <action/>
+                     <name>ADMINExternalProductIdentifier</name>
+                     <valueString>280001592358463</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+      
+                <valueInteger/>
+                     <source/>
+                  </attributeSeq>
+                  <attributeSeq index="2">
+                     <action/>
+                     <name>CFSSID</name>
+                     <valueString>PR_PAYG_DATA_CFSS</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="3">
+                     <action/>
+                     <name>PAMClassID</name>
+                     <valueString>100</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="4">
+                     <action/>
+                     <name>PAMScheduleID</name>
+                     <valueString>0</valueString>
+                 
+     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="5">
+                     <action/>
+                     <name>POID</name>
+                     <valueString>PR_KNOCKOUT_PAYG_PO</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="6">
+                     <action/>
+                     <name>TemplateVersion</name>
+                     <valueString>1.1</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <treeSeq index="1">
+                     <serviceProvider>1</serviceProvider>
+                    
+  <treeParameterSeq index="1">
+                        <name>dataLocalPulseKB</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>256</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="2">
+                        <name>dataLocalPulseMB</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>1</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="3">
+                        <name>dataLocalChrg</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        
+ <valueNumber>
+                           <currencyCode>0</currencyCode>
+                           <value>450000000000000</value>
+                           <exponent>-15</exponent>
+                        </valueNumber>
+                        <valueInteger/>
+                        <source>1</source>
+                     </treeParameterSeq>
+                  </treeSeq>
+               </offerSeq>
+               <offerSeq index="3">
+                  <offerId>77596</offerId>
+                  <productOfferingName/>
+                  <productId>1</productId>
+                  <externalProductId/>
+                  <expiryDate>0</expiryDate>
+                  <startDate>17868</startDate>
+                  <expiryDateTime/>
+                  <startDateTime/>
+                  <typeOfOffer>0</typeOfOffer>
+                  <state/>
+                  <feeApplied/>
+                  <providerId/>
+                  <pamServiceId/>
+                  <attributeSeq index="1">
+                  
+    <action/>
+                     <name>ADMINExternalProductIdentifier</name>
+                     <valueString>280001592358463</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source/>
+                  </attributeSeq>
+                  <attributeSeq index="2">
+                     <action/>
+                     <name>CFSSID</name>
+                     <valueString>PR_PAYG_INTLSMS_CFSS</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="3">
+                     <action/>
+                     <name>PAMClassID</name>
+                     <valueString>100</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+  
+                 </attributeSeq>
+                  <attributeSeq index="4">
+                     <action/>
+                     <name>PAMScheduleID</name>
+                     <valueString>0</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="5">
+                     <action/>
+                     <name>POID</name>
+                     <valueString>PR_KNOCKOUT_PAYG_PO</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="6">
+                     <action/>
+                     <name>TemplateVersion</name>
+                     <valueString>1.1</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+      
+                <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <treeSeq index="1">
+                     <serviceProvider>1</serviceProvider>
+                     <treeParameterSeq index="1">
+                        <name>smsINTchrg</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber>
+                           <currencyCode>0</currencyCode>
+                           <value>450000000000000</value>
+                           <exponent>-15</exponent>
+                        </valueNumber>
+                        <valueInteger/>
+                        <source>1</source>
+                     </treeParameterSeq>
+                  </treeSeq>
+               </offerSeq>
+               <offerSeq index="4">
+                  <offerId>77609</offerId>
+                  <productOfferingName/>
+                  <productId>0</productId>
+   
+                <externalProductId/>
+                  <expiryDate>0</expiryDate>
+                  <startDate>17868</startDate>
+                  <expiryDateTime/>
+                  <startDateTime/>
+                  <typeOfOffer>0</typeOfOffer>
+                  <state/>
+                  <feeApplied/>
+                  <providerId/>
+                  <pamServiceId/>
+                  <attributeSeq index="1">
+                     <action/>
+                     <name>ADMINExternalProductIdentifier</name>
+                     <valueString>280001592358463</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source/>
+                  </attributeSeq>
+                  <attributeSeq index="2">
+                     <action/>
+                     <name>CFSSID</name>
+                     <valueString>PR_PAYG_MMS_CFSS</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+   
+                   <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="3">
+                     <action/>
+                     <name>PAMClassID</name>
+                     <valueString>100</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="4">
+                     <action/>
+                     <name>PAMScheduleID</name>
+                     <valueString>0</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="5">
+                     <action/>
+                     <name>POID</name>
+                     <valueString>PR_KNOCKOUT_PAYG_PO</valueString>
+     
+                 <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="6">
+                     <action/>
+                     <name>TemplateVersion</name>
+                     <valueString>1.1</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <treeSeq index="1">
+                     <serviceProvider>1</serviceProvider>
+                     <treeParameterSeq index="1">
+                        <name>mmsONchrg</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber>
+                           <currencyCode>0</currencyCode>
+                           <value>450000000000000</value>
+          
+                  <exponent>-15</exponent>
+                        </valueNumber>
+                        <valueInteger/>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="2">
+                        <name>mmsOFFchrg</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber>
+                           <currencyCode>0</currencyCode>
+                           <value>450000000000000</value>
+                           <exponent>-15</exponent>
+                        </valueNumber>
+                        <valueInteger/>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="3">
+                        <name>mmsINTchrg</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+           
+              <valueNumber>
+                           <currencyCode>0</currencyCode>
+                           <value>650000000000000</value>
+                           <exponent>-15</exponent>
+                        </valueNumber>
+                        <valueInteger/>
+                        <source>1</source>
+                     </treeParameterSeq>
+                  </treeSeq>
+               </offerSeq>
+               <offerSeq index="5">
+                  <offerId>77622</offerId>
+                  <productOfferingName/>
+                  <productId>0</productId>
+                  <externalProductId/>
+                  <expiryDate>0</expiryDate>
+                  <startDate>17868</startDate>
+                  <expiryDateTime/>
+                  <startDateTime/>
+                  <typeOfOffer>0</typeOfOffer>
+                  <state/>
+                  <feeApplied/>
+                  <providerId/>
+                  <pamServiceId/>
+                  <attributeSeq index="1">
+     
+                 <action/>
+                     <name>ADMINExternalProductIdentifier</name>
+                     <valueString>280001592358463</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source/>
+                  </attributeSeq>
+                  <attributeSeq index="2">
+                     <action/>
+                     <name>CFSSID</name>
+                     <valueString>PR_PAYG_SMS_CFSS</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="3">
+                     <action/>
+                     <name>PAMClassID</name>
+                     <valueString>100</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</so
+ urce>
+                  </attributeSeq>
+                  <attributeSeq index="4">
+                     <action/>
+                     <name>PAMScheduleID</name>
+                     <valueString>0</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="5">
+                     <action/>
+                     <name>POID</name>
+                     <valueString>PR_KNOCKOUT_PAYG_PO</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="6">
+                     <action/>
+                     <name>TemplateVersion</name>
+                     <valueString>1.1</valueString>
+                     <valueDate/>
+                     <valueNumber/
+ >
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <treeSeq index="1">
+                     <serviceProvider>1</serviceProvider>
+                     <treeParameterSeq index="1">
+                        <name>smsONchrg</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber>
+                           <currencyCode>0</currencyCode>
+                           <value>450000000000000</value>
+                           <exponent>-15</exponent>
+                        </valueNumber>
+                        <valueInteger/>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="2">
+                        <name>smsOFFchrg</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+       
+                  <valueNumber>
+                           <currencyCode>0</currencyCode>
+                           <value>450000000000000</value>
+                           <exponent>-15</exponent>
+                        </valueNumber>
+                        <valueInteger/>
+                        <source>1</source>
+                     </treeParameterSeq>
+                  </treeSeq>
+               </offerSeq>
+               <offerSeq index="6">
+                  <offerId>77635</offerId>
+                  <productOfferingName/>
+                  <productId>0</productId>
+                  <externalProductId/>
+                  <expiryDate>0</expiryDate>
+                  <startDate>17868</startDate>
+                  <expiryDateTime/>
+                  <startDateTime/>
+                  <typeOfOffer>0</typeOfOffer>
+                  <state/>
+                  <feeApplied/>
+                  <providerId/>
+                  <pamServiceId/>
+                  <attributeSeq index="1">
+ 
+                     <action/>
+                     <name>ADMINExternalProductIdentifier</name>
+                     <valueString>280001592358463</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source/>
+                  </attributeSeq>
+                  <attributeSeq index="2">
+                     <action/>
+                     <name>CFSSID</name>
+                     <valueString>PR_PAYG_VIDEO_CFSS</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="3">
+                     <action/>
+                     <name>PAMClassID</name>
+                     <valueString>100</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source
+ >1</source>
+                  </attributeSeq>
+                  <attributeSeq index="4">
+                     <action/>
+                     <name>PAMScheduleID</name>
+                     <valueString>0</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="5">
+                     <action/>
+                     <name>POID</name>
+                     <valueString>PR_KNOCKOUT_PAYG_PO</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="6">
+                     <action/>
+                     <name>TemplateVersion</name>
+                     <valueString>1.1</valueString>
+                     <valueDate/>
+                     <valueN
+ umber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <treeSeq index="1">
+                     <serviceProvider>1</serviceProvider>
+                     <treeParameterSeq index="1">
+                        <name>videoONchrg</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber>
+                           <currencyCode>0</currencyCode>
+                           <value>1000000000000000</value>
+                           <exponent>-15</exponent>
+                        </valueNumber>
+                        <valueInteger/>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="2">
+                        <name>videoONpulse</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate
+ />
+                        <valueNumber/>
+                        <valueInteger>60</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="3">
+                        <name>videoOFFpulse</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>60</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="4">
+                        <name>videoOFFchrg</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber>
+                           <currencyCode>0</currencyCode>
+                           <value>1000000000000000</value>
+                           <exponent>-15</exponent>
+            
+             </valueNumber>
+                        <valueInteger/>
+                        <source>1</source>
+                     </treeParameterSeq>
+                  </treeSeq>
+               </offerSeq>
+               <offerSeq index="7">
+                  <offerId>77648</offerId>
+                  <productOfferingName/>
+                  <productId>0</productId>
+                  <externalProductId/>
+                  <expiryDate>0</expiryDate>
+                  <startDate>17868</startDate>
+                  <expiryDateTime/>
+                  <startDateTime/>
+                  <typeOfOffer>0</typeOfOffer>
+                  <state/>
+                  <feeApplied/>
+                  <providerId/>
+                  <pamServiceId/>
+                  <attributeSeq index="1">
+                     <action/>
+                     <name>ADMINExternalProductIdentifier</name>
+                     <valueString>280001592358463</valueString>
+                     <valueDate/>
+                  
+    <valueNumber/>
+                     <valueInteger/>
+                     <source/>
+                  </attributeSeq>
+                  <attributeSeq index="2">
+                     <action/>
+                     <name>CFSSID</name>
+                     <valueString>PR_PAYG_VOICE_CFSS</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="3">
+                     <action/>
+                     <name>PAMClassID</name>
+                     <valueString>100</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="4">
+                     <action/>
+                     <name>PAMScheduleID</name>
+                     <valueString>0</value
+ String>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="5">
+                     <action/>
+                     <name>POID</name>
+                     <valueString>PR_KNOCKOUT_PAYG_PO</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="6">
+                     <action/>
+                     <name>TemplateVersion</name>
+                     <valueString>1.1</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <treeSeq index="1">
+                     <serviceProvider>1</serviceProvi
+ der>
+                     <treeParameterSeq index="1">
+                        <name>voiceONCFpulse</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>0</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="2">
+                        <name>voiceOFFpulse</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>15</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="3">
+                        <name>voiceOFFchrg</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+     
+                    <valueNumber>
+                           <currencyCode>0</currencyCode>
+                           <value>450000000000000</value>
+                           <exponent>-15</exponent>
+                        </valueNumber>
+                        <valueInteger/>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="4">
+                        <name>voiceOFFCFpulse</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>0</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="5">
+                        <name>voiceONCFchrg</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber
+ >
+                           <currencyCode>0</currencyCode>
+                           <value>0</value>
+                           <exponent>-15</exponent>
+                        </valueNumber>
+                        <valueInteger/>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="6">
+                        <name>voiceONchrg</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber>
+                           <currencyCode>0</currencyCode>
+                           <value>450000000000000</value>
+                           <exponent>-15</exponent>
+                        </valueNumber>
+                        <valueInteger/>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="7">
+                        <name>voiceONpulse</name>
+    
+                     <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>15</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="8">
+                        <name>voiceOFFCFchrg</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber>
+                           <currencyCode>0</currencyCode>
+                           <value>0</value>
+                           <exponent>-15</exponent>
+                        </valueNumber>
+                        <valueInteger/>
+                        <source>1</source>
+                     </treeParameterSeq>
+                  </treeSeq>
+               </offerSeq>
+               <offerSeq index="8">
+                  <offerId>77674</offerId>
+             
+      <productOfferingName/>
+                  <productId>0</productId>
+                  <externalProductId/>
+                  <expiryDate>0</expiryDate>
+                  <startDate>17868</startDate>
+                  <expiryDateTime/>
+                  <startDateTime/>
+                  <typeOfOffer>0</typeOfOffer>
+                  <state/>
+                  <feeApplied/>
+                  <providerId/>
+                  <pamServiceId/>
+                  <attributeSeq index="1">
+                     <action/>
+                     <name>ADMINExternalProductIdentifier</name>
+                     <valueString>280001592358553</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source/>
+                  </attributeSeq>
+                  <attributeSeq index="2">
+                     <action/>
+                     <name>CFSSID</name>
+                     <valueString>PR_INTLVOICE_PAYG_CFSS</valueSt
+ ring>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="3">
+                     <action/>
+                     <name>POID</name>
+                     <valueString>PR_EXPAT_INTLRATE_PAYG_PO</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="4">
+                     <action/>
+                     <name>TemplateVersion</name>
+                     <valueString>1.1</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="5">
+                     <action/>
+            
+          <name>pamClassId</name>
+                     <valueString>0</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="6">
+                     <action/>
+                     <name>schedulerIDMonthly</name>
+                     <valueString>0</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <treeSeq index="1">
+                     <serviceProvider>1</serviceProvider>
+                     <treeParameterSeq index="1">
+                        <name>ChargingPulse</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueIn
+ teger>0</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="2">
+                        <name>PackageID</name>
+                        <action/>
+                        <valueString>0</valueString>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger/>
+                        <source>1</source>
+                     </treeParameterSeq>
+                  </treeSeq>
+               </offerSeq>
+               <offerSeq index="9">
+                  <offerId>247385</offerId>
+                  <productOfferingName/>
+                  <productId>0</productId>
+                  <externalProductId/>
+                  <expiryDate>0</expiryDate>
+                  <startDate>17868</startDate>
+                  <expiryDateTime/>
+                  <startDateTime/>
+                  <typeOfOffer>0</typeOfOffer>
+                  <state/>
+            
+       <feeApplied/>
+                  <providerId/>
+                  <pamServiceId/>
+                  <attributeSeq index="1">
+                     <action/>
+                     <name>ADMINExternalProductIdentifier</name>
+                     <valueString>280001592358620</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source/>
+                  </attributeSeq>
+                  <attributeSeq index="2">
+                     <action/>
+                     <name>CFSSID</name>
+                     <valueString>PR_RECH_ENABLE_CFSS</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="3">
+                     <action/>
+                     <name>POID</name>
+                     <valueString>PR_RECH_ENABLE_PO</valueStri
+ ng>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="4">
+                     <action/>
+                     <name>TemplateVersion</name>
+                     <valueString>1.1</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="5">
+                     <action/>
+                     <name>pamClassId</name>
+                     <valueString>0</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="6">
+                     <action/>
+                     <name>sched
+ ulerIDOneTime</name>
+                     <valueString>0</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <treeSeq index="1">
+                     <serviceProvider>1</serviceProvider>
+                     <treeParameterSeq index="1">
+                        <name>smsINTUT</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>0</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="2">
+                        <name>MoneyUC1</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                       
+  <valueInteger>60416</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="3">
+                        <name>smsONUC</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>60410</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="4">
+                        <name>MoneyUC3</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>60418</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="5">
+                        <name>voiceALLUC</name>
+        
+                 <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>60405</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="6">
+                        <name>MoneyUC2</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>60417</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="7">
+                        <name>DAvalue4</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber>
+                           <currencyCode>0</currencyCode>
+                           
+ <value>0</value>
+                           <exponent>-15</exponent>
+                        </valueNumber>
+                        <valueInteger/>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="8">
+                        <name>MoneyUC4</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>60419</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="9">
+                        <name>DAID3</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>493</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq
+ >
+                     <treeParameterSeq index="10">
+                        <name>DAID2</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>492</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="11">
+                        <name>DAID1</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>491</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="12">
+                        <name>DataLocalUC</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                    
+     <valueNumber/>
+                        <valueInteger>60413</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="13">
+                        <name>voiceOFFUT</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>0</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="14">
+                        <name>smsALLUT</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>0</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="15">
+                
+         <name>DAID4</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>494</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="16">
+                        <name>MoneyUC</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>60415</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="17">
+                        <name>voiceINTUT</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>0</valueIn
+ teger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="18">
+                        <name>smsINTUC</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>60411</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="19">
+                        <name>DAID</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>490</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="20">
+                        <name>smsONUT</name>
+                        <action/>
+       
+                  <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>0</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="21">
+                        <name>voiceONUT</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>0</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="22">
+                        <name>voiceINTUC</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>60407</valueInteger>
+                        <source>1</source>
+                  
+    </treeParameterSeq>
+                     <treeParameterSeq index="23">
+                        <name>voiceOFFUC</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>60408</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="24">
+                        <name>DAvalue</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber>
+                           <currencyCode>0</currencyCode>
+                           <value>0</value>
+                           <exponent>-15</exponent>
+                        </valueNumber>
+                        <valueInteger/>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <tree
+ ParameterSeq index="25">
+                        <name>MoneyUT</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>0</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="26">
+                        <name>smsOFFUC</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>60412</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="27">
+                        <name>DataLocalUT</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+    
+                     <valueInteger>0</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="28">
+                        <name>smsOFFUT</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>0</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="29">
+                        <name>voiceALLUT</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>0</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="30">
+                        <name>voiceONUC</nam
+ e>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>60406</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="31">
+                        <name>MoneyUT3</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>0</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="32">
+                        <name>DAvalue1</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber>
+                           <currencyCode>0</currencyCode>
+                 
+           <value>0</value>
+                           <exponent>-15</exponent>
+                        </valueNumber>
+                        <valueInteger/>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="33">
+                        <name>MoneyUT4</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>0</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="34">
+                        <name>DAvalue3</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber>
+                           <currencyCode>0</currencyCode>
+                           <value>0</value>
+                           
+ <exponent>-15</exponent>
+                        </valueNumber>
+                        <valueInteger/>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="35">
+                        <name>DAvalue2</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber>
+                           <currencyCode>0</currencyCode>
+                           <value>0</value>
+                           <exponent>-15</exponent>
+                        </valueNumber>
+                        <valueInteger/>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="36">
+                        <name>smsALLUC</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+    
+                     <valueInteger>60409</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="37">
+                        <name>MoneyUT1</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>0</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="38">
+                        <name>MoneyUT2</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>0</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                  </treeSeq>
+               </offerSeq>
+               <offerSeq index="10">
+ 
+                  <offerId>256186</offerId>
+                  <productOfferingName/>
+                  <productId>0</productId>
+                  <externalProductId/>
+                  <expiryDate>0</expiryDate>
+                  <startDate>17868</startDate>
+                  <expiryDateTime/>
+                  <startDateTime/>
+                  <typeOfOffer>0</typeOfOffer>
+                  <state/>
+                  <feeApplied/>
+                  <providerId/>
+                  <pamServiceId/>
+                  <attributeSeq index="1">
+                     <action/>
+                     <name>ADMINExternalProductIdentifier</name>
+                     <valueString>280001592358602</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source/>
+                  </attributeSeq>
+                  <attributeSeq index="2">
+                     <action/>
+                     <name>CFSSID</name>
+     
+                 <valueString>SPARK_ENABLER_CFSS</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="3">
+                     <action/>
+                     <name>POID</name>
+                     <valueString>SPARK_ENABLER_PO</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="4">
+                     <action/>
+                     <name>TemplateVersion</name>
+                     <valueString>1.1</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="5"
+ >
+                     <action/>
+                     <name>pamClassId</name>
+                     <valueString>0</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="6">
+                     <action/>
+                     <name>schedulerIDOneTime</name>
+                     <valueString>0</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <treeSeq index="1">
+                     <serviceProvider>1</serviceProvider>
+                     <treeParameterSeq index="1">
+                        <name>smsINTUC</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <value
+ Number/>
+                        <valueInteger>60511</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="2">
+                        <name>smsINTUT</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>0</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="3">
+                        <name>smsONUC</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>60510</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="4">
+                        <nam
+ e>smsONUT</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>0</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="5">
+                        <name>smsOFFUC</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>60512</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="6">
+                        <name>smsOFFUT</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>0</valueInteger>
+       
+                  <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="7">
+                        <name>DataLocalUT</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>0</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="8">
+                        <name>DataLocalUC</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>60513</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="9">
+                        <name>smsALLUC</name>
+                        <action/>
+                
+         <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>60509</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="10">
+                        <name>smsALLUT</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>0</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                  </treeSeq>
+               </offerSeq>
+               <offerSeq index="11">
+                  <offerId>524007</offerId>
+                  <productOfferingName/>
+                  <productId>0</productId>
+                  <externalProductId/>
+                  <expiryDate>0</expiryDate>
+                  <startDate>17868</startDate>
+                  <ex
+ piryDateTime/>
+                  <startDateTime/>
+                  <typeOfOffer>0</typeOfOffer>
+                  <state/>
+                  <feeApplied/>
+                  <providerId/>
+                  <pamServiceId/>
+                  <attributeSeq index="1">
+                     <action/>
+                     <name>ADMINExternalProductIdentifier</name>
+                     <valueString>280001592358576</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source/>
+                  </attributeSeq>
+                  <attributeSeq index="2">
+                     <action/>
+                     <name>CFSSID</name>
+                     <valueString>PR_INTLFnF_VOICE_PAYG_V1_CFSS</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attribute
+ Seq index="3">
+                     <action/>
+                     <name>POID</name>
+                     <valueString>PR_INTLFnF_VOICE_V1_PAYG_PO</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="4">
+                     <action/>
+                     <name>TemplateVersion</name>
+                     <valueString>1.1</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="5">
+                     <action/>
+                     <name>pamClassId</name>
+                     <valueString>100</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <
+ source>1</source>
+                  </attributeSeq>
+                  <attributeSeq index="6">
+                     <action/>
+                     <name>schedulerIDMonthly</name>
+                     <valueString>0</valueString>
+                     <valueDate/>
+                     <valueNumber/>
+                     <valueInteger/>
+                     <source>1</source>
+                  </attributeSeq>
+                  <treeSeq index="1">
+                     <serviceProvider>1</serviceProvider>
+                     <treeParameterSeq index="1">
+                        <name>FaFVoicePricePerMin</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber>
+                           <currencyCode>0</currencyCode>
+                           <value>0</value>
+                           <exponent>-15</exponent>
+                        </valueNumber>
+                        <valueInteger/>
+      
+                   <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="2">
+                        <name>FaFList</name>
+                        <action/>
+                        <valueString>0</valueString>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger/>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq index="3">
+                        <name>FaFListLimit</name>
+                        <action/>
+                        <valueString/>
+                        <valueDate/>
+                        <valueNumber/>
+                        <valueInteger>0</valueInteger>
+                        <source>1</source>
+                     </treeParameterSeq>
+                     <treeParameterSeq inde
